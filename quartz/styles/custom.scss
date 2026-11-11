@@ -78,7 +78,7 @@ article {
 }
 
 .content-meta {
-  opacity: 0.75;
+  font-size: 0.92rem;
 }
 
 // 左栏站名：衬线 + 不折行
@@ -87,10 +87,10 @@ article {
   white-space: nowrap;
 }
 
-// 页脚弱化
+// 页脚弱化（保留足够对比度）
 footer {
-  opacity: 0.75;
-  font-size: 0.85rem;
+  opacity: 0.9;
+  font-size: 0.9rem;
 }
 
 // ===== 首页专用（index.md 里的 HTML 块）=====
@@ -207,5 +207,166 @@ footer {
 
   .hero-title {
     font-size: 1.5rem;
+  }
+}
+
+// ===== UI/UX 审计修复（2026-11-11 第二轮）=====
+// 审计确认的真实缺陷：①左右栏各 320px 在 1200–1440 挤压正文；
+// ②--gray 在浅/深底上对比度仅 2.16 / 3.17（已在 config 改色值，此处配合字号）；
+// ③首页文章标题与左栏站名重复；④图谱框过高、且排在目录之前；
+// ⑤小标签字号偏小；⑥坐标卡关键数字不突出、无来源/核查行。
+
+// --- 布局：收窄左右栏，正文优先（断点与 Quartz base 对齐：tablet 800–1200，desktop ≥1200）---
+@media (min-width: 800px) and (max-width: 1200px) {
+  .page {
+    grid-template-columns: 250px minmax(0, 1fr);
+  }
+}
+
+@media (min-width: 1200px) {
+  .page {
+    max-width: 1400px;
+    grid-template-columns: 250px minmax(0, 1fr) 280px;
+  }
+}
+
+// --- 首页：隐藏与左栏站名重复的文章大标题 ---
+body[data-slug="index"] .article-title {
+  display: none;
+}
+
+// --- 小标签可读性：面包屑、目录、标签、图谱标题 ---
+.breadcrumb-container {
+  font-size: 0.92rem;
+}
+
+.toc {
+  font-size: 0.93rem;
+}
+
+ul.tags > li > a,
+a.tag-link {
+  font-size: 0.88rem;
+}
+
+.backlinks {
+  font-size: 0.95rem;
+}
+
+// --- 图谱：降低高度、排到目录与反链之后（layout 已调整顺序）---
+.sidebar.right .graph .graph-outer {
+  height: 200px;
+}
+
+// --- 溢出防护：长链接断行、表格容器横滚、图片不撑破 ---
+article a {
+  overflow-wrap: anywhere;
+}
+
+article .table-container {
+  overflow-x: auto;
+  max-width: 100%;
+}
+
+article img {
+  max-width: 100%;
+  height: auto;
+}
+
+// --- 移动端站名收紧，避免顶栏折行 ---
+@media (max-width: 800px) {
+  .page-title {
+    font-size: 1.08rem;
+    letter-spacing: 0;
+    flex-shrink: 0;
+  }
+}
+
+// --- Hero 行动区：主入口（时间线）+ 次入口（笔记地图）---
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 1rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.52rem 1.1rem;
+  border-radius: 999px;
+  border: 1px solid var(--secondary);
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+  background: none;
+
+  &.btn-primary {
+    background-color: var(--secondary);
+    color: var(--light);
+  }
+
+  &.btn-ghost {
+    color: var(--secondary);
+    background-color: transparent;
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--secondary);
+    outline-offset: 2px;
+  }
+}
+
+// --- 卡片：整卡可点（单链接卡）、焦点可见、坐标卡数字与出处行 ---
+.note-card {
+  position: relative;
+
+  .card-kicker {
+    font-size: 0.78rem;
+  }
+
+  a.card-link::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 12px;
+  }
+
+  a:focus-visible {
+    outline: 2px solid var(--secondary);
+    outline-offset: 2px;
+  }
+
+  .stat-num {
+    font-family: var(--headerFont);
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--secondary);
+    margin: 0.15rem 0 0.3rem;
+  }
+
+  .stat-label {
+    font-size: 0.92rem;
+    font-weight: 600;
+    color: var(--dark);
+    margin-bottom: 0.3rem;
+  }
+
+  .card-meta {
+    font-size: 0.8rem;
+    line-height: 1.55;
+    color: var(--gray);
+    margin: 0.55rem 0 0;
+  }
+}
+
+// 首页底部的 WikiLink 索引行：让首页与各笔记在图谱/反链中建立关联
+.index-wikilinks {
+  font-size: 0.85rem;
+  color: var(--gray);
+  line-height: 2;
+
+  a {
+    white-space: nowrap;
   }
 }

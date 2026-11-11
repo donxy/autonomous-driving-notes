@@ -60,3 +60,9 @@ tags:
 ## 怎么读这条时间线
 
 三条线同时在走：**技术线**（挑战赛→模块化管线→端到端，见 [[technology/stack|技术栈速览]]）、**商业线**（Waymo 与中国 robotaxi 的规模化 vs Cruise/Argo 的退场）、**监管线**（从测试牌照到 L3 准入，见 [[regulation/levels-and-rules|自动驾驶分级与监管]]）。哪条线在哪个年份加速，基本决定了那一年行业的热度。
+
+## 相关笔记
+
+- [[history/darpa-challenge|DARPA 挑战赛]] —— 时间线的公开起点
+- [[history/google-to-waymo|从 Google 项目到 Waymo]] —— 商业线的源头
+- [[regulation/levels-and-rules|自动驾驶分级与监管]] —— 监管线的完整口径

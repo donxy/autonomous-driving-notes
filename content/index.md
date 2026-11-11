@@ -5,11 +5,13 @@ tags:
   - 总览
 ---
 
+<!-- 维护提示：「10 篇笔记」= content 下除本页外的 md 数（时间线 + 9 篇专题），增删笔记时同步修改；计数核对于 2026-11-11。 -->
 <div class="hero">
   <div class="hero-kicker">历 史 · 技 术 · 公 司 · 监 管</div>
   <p class="hero-title">从实验室演示，到满街跑的无人车</p>
   <p class="hero-sub">四十年，一条主线：谁在开车、谁来兜底、谁为它付钱。这座笔记花园顺着链接，把每个事件连到它的前因、后果和对手。</p>
   <div class="hero-chips"><span>10 篇笔记</span><span>关键事实逐项出处</span><span>已核实 / 公司口径 / 未核实 分开标注</span><span>信息截至 2026-11-11</span></div>
+  <div class="hero-actions"><a class="btn btn-primary" href="./timeline">从时间线开始 →</a><a class="btn btn-ghost" href="#笔记地图">浏览笔记地图</a></div>
 </div>
 
 > 这是一座**笔记花园**，不是一篇写完就封存的长文。每篇笔记只讲一件事，笔记之间用链接互相牵引。全站写作口径一致：关键事实逐项给出处，现状类数字注明截至日期。
@@ -19,22 +21,31 @@ tags:
 <div class="card-grid">
   <div class="note-card">
     <div class="card-kicker">规 模</div>
-    <p class="card-desc">Waymo 每周全无人付费出行超 50 万次、累计出行超 2,000 万次；萝卜快跑累计全无人订单超 2,300 万单——中美头部第一次站在同一量级。</p>
+    <div class="stat-num">50 万+ 次/周</div>
+    <p class="stat-label">Waymo 每周全无人付费出行（最新官方数字）</p>
+    <p class="card-desc">萝卜快跑累计全无人订单超 2,300 万单——中美头部第一次站在同一量级。</p>
+    <p class="card-meta">来源：Alphabet Q1 2026 财报（2026-04-29）；百度 Q2 2026 财报（2026-08-18）· 核查 2026-11-11</p>
     <p class="card-links"><a href="./companies/waymo">Waymo</a> · <a href="./china/robotaxi-china">中国 Robotaxi 格局</a></p>
   </div>
   <div class="note-card">
     <div class="card-kicker">分 级 落 地</div>
-    <p class="card-desc">2025 年 12 月，中国首批两款 L3 车型获附条件准入，由指定主体在限定路段试点——L3 第一次从发布会名词变成牌照。</p>
+    <div class="stat-num">2 款车型</div>
+    <p class="stat-label">中国首批 L3 车型获附条件准入（2025 年 12 月）</p>
+    <p class="card-desc">长安深蓝 SL03 与极狐阿尔法 S6，由指定主体在限定路段试点——L3 第一次从发布会名词变成牌照。</p>
+    <p class="card-meta">来源：工信部准入通告（2025-12-15）· 核查 2026-11-11</p>
     <p class="card-links"><a href="./regulation/levels-and-rules">自动驾驶分级与监管</a></p>
   </div>
   <div class="note-card">
     <div class="card-kicker">最 大 落 差</div>
-    <p class="card-desc">Tesla 的 robotaxi 已在约 8 个美国都会区无人运营，但其消费级 FSD 在自家监管文件里始终是 L2，2025 年 12 月刚被加州 DMV 裁定营销误导。</p>
+    <div class="stat-num">L2</div>
+    <p class="stat-label">Tesla 消费级 FSD 在监管文件中的定级</p>
+    <p class="card-desc">其 robotaxi 已在约 8 个美国都会区无人运营，但卖给消费者的系统始终是 L2；2025 年 12 月，加州 DMV 裁定其营销误导。</p>
+    <p class="card-meta">来源：加州 DMV 裁定（2025-12-16）等，详见 Tesla 页 · 核查 2026-11-11</p>
     <p class="card-links"><a href="./companies/tesla">Tesla</a></p>
   </div>
 </div>
 
-## 从哪里开始
+## 推荐阅读路径
 
 - [[timeline|时间线总览]] —— 先拉一条主线：1986 年的实验室源头，到 2026 年的 L3 牌照
 - [[history/darpa-challenge|DARPA 挑战赛]] —— 现代自动驾驶的公开起点
@@ -61,6 +72,8 @@ tags:
     <p class="card-desc">分级在分什么、L3 怎么批、出了事谁负责。</p>
   </div>
 </div>
+
+全站索引：[[timeline|时间线总览]] · [[history/darpa-challenge|DARPA 挑战赛]] · [[history/google-to-waymo|从 Google 项目到 Waymo]] · [[technology/routes|路线之争]] · [[technology/stack|技术栈速览]] · [[companies/waymo|Waymo]] · [[companies/tesla|Tesla]] · [[china/robotaxi-china|中国 Robotaxi 格局]] · [[regulation/levels-and-rules|自动驾驶分级与监管]]
 
 ## 本轮调研纠正的三个常见误传
 
