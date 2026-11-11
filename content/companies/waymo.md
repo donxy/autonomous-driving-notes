@@ -65,4 +65,5 @@ Alphabet 2026-10-28 口径：凤凰城、旧金山湾区、洛杉矶、圣迭戈
 ## 相关笔记
 
 - [[history/google-to-waymo|从 Google 项目到 Waymo]]
-- [[companies/tesla|Tesla]] · [[china/robotaxi-china|中国 Robotaxi 格局]]
+- [[companies/tesla|Tesla]] · [[companies/cruise|Cruise：从估值顶点到关停]] · [[companies/pony-ai|小马智行]]
+- [[technology/safety-evidence|安全数据怎么读]] · [[technology/business-model|Robotaxi 的成本与商业模式]] · [[china/robotaxi-china|中国 Robotaxi 格局]]

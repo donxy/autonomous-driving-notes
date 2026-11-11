@@ -69,5 +69,5 @@ tags:
 
 ## 相关笔记
 
-- [[companies/waymo|Waymo]]
-- [[regulation/levels-and-rules|自动驾驶分级与监管]]
+- [[companies/waymo|Waymo]] · [[companies/pony-ai|小马智行]]
+- [[technology/business-model|Robotaxi 的成本与商业模式]] · [[regulation/levels-and-rules|自动驾驶分级与监管]]
