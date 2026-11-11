@@ -63,4 +63,4 @@ tags:
 ## 相关笔记
 
 - [[companies/cruise|Cruise：从估值顶点到关停]] · [[history/google-to-waymo|从 Google 项目到 Waymo]]
-- [[technology/safety-evidence|安全数据怎么读]] · [[technology/business-model|Robotaxi 的成本与商业模式]] · [[timeline|时间线总览]]
+- [[technology/safety-evidence|安全数据怎么读]] · [[technology/business-model|Robotaxi 的成本与商业模式]] · [[technology/trucking|自动驾驶卡车：干线货运线]] · [[timeline|时间线总览]]
