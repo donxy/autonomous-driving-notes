@@ -99,9 +99,12 @@ footer {
   padding: 1.6rem 1.5rem 1.3rem;
   border: 1px solid var(--lightgray);
   border-radius: 14px;
-  background:
-    radial-gradient(120% 150% at 12% 0%, var(--highlight) 0%, transparent 55%),
-    linear-gradient(180deg, color-mix(in srgb, var(--lightgray) 26%, transparent), transparent);
+  // 注：kicker 所在区域保持平底（原径向渐变会把橙字对比度压到 3.8:1，taste 检查器抓到后去掉）
+  background: linear-gradient(
+    180deg,
+    color-mix(in srgb, var(--lightgray) 26%, transparent),
+    transparent
+  );
 }
 
 .hero-kicker {
@@ -230,9 +233,17 @@ footer {
   }
 }
 
-// --- 首页：隐藏与左栏站名重复的文章大标题 ---
+// --- 首页：与左栏站名重复的文章大标题改为视觉隐藏（读屏/语义仍可达，保留 h1）---
 body[data-slug="index"] .article-title {
-  display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 // --- 小标签可读性：面包屑、目录、标签、图谱标题 ---
@@ -368,5 +379,54 @@ article img {
 
   a {
     white-space: nowrap;
+  }
+}
+
+// ===== taste-skill 审阅第一类修复（2026-11-11）=====
+// 全局键盘焦点轮廓（Quartz 的 .clipboard-button:focus 只删轮廓不补替代，一并覆盖）
+:focus-visible {
+  outline: 2px solid var(--secondary);
+  outline-offset: 2px;
+}
+
+.clipboard-button:focus {
+  outline: 2px solid var(--secondary);
+  outline-offset: 2px;
+}
+
+// 尊重系统的「减少动态效果」
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+// 极窄屏（≤480px）：顶栏搜索区可收缩、阅读模式按钮让位，消除 320px 横向溢出
+@media (max-width: 480px) {
+  .sidebar.left .flex-component {
+    min-width: 0;
+  }
+
+  .search {
+    min-width: 0;
+    flex: 1 1 auto;
+  }
+
+  .readermode {
+    display: none;
+  }
+}
+
+// 页脚链接：移动端加大点按高度与间距，避免误触
+@media (max-width: 800px) {
+  footer ul li a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
   }
 }
