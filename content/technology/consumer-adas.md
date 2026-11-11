@@ -63,5 +63,5 @@ tags:
 
 ## 相关笔记
 
-- [[companies/tesla|Tesla]] · [[technology/routes|路线之争：激光雷达 vs 纯视觉]] · [[technology/stack|技术栈速览]]
+- [[companies/tesla|Tesla]] · [[technology/routes|路线之争：激光雷达 vs 纯视觉]] · [[technology/stack|技术栈速览]] · [[technology/chips|芯片与算力：TOPS 背后的生意]]
 - [[regulation/levels-and-rules|自动驾驶分级与监管]] · [[regulation/us-eu-rules|美国与欧盟的监管]] · [[timeline|时间线总览]]
