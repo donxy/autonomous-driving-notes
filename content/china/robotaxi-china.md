@@ -69,5 +69,5 @@ tags:
 
 ## 相关笔记
 
-- [[companies/waymo|Waymo]] · [[companies/pony-ai|小马智行]]
+- [[companies/waymo|Waymo]] · [[companies/pony-ai|小马智行]] · [[companies/weride|文远知行]] · [[companies/apollo-go|百度 Apollo Go]]
 - [[technology/business-model|Robotaxi 的成本与商业模式]] · [[regulation/levels-and-rules|自动驾驶分级与监管]]

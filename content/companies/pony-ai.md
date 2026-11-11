@@ -86,5 +86,5 @@ tags:
 
 ## 相关笔记
 
-- [[china/robotaxi-china|中国 Robotaxi 格局]] · [[technology/business-model|Robotaxi 的成本与商业模式]]
+- [[china/robotaxi-china|中国 Robotaxi 格局]] · [[companies/weride|文远知行]] · [[companies/apollo-go|百度 Apollo Go]] · [[technology/business-model|Robotaxi 的成本与商业模式]]
 - [[companies/waymo|Waymo]] · [[companies/cruise|Cruise：从估值顶点到关停]] · [[timeline|时间线总览]]
