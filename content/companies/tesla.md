@@ -8,7 +8,8 @@ tags:
 
 # Tesla
 
-> 本页纪律：把「已交付功能的监管定性」和「营销语言」分开写。凡引 Tesla 对自身功能的定性，以其监管文件与官方支持页为准。信息截至 2026-11-11。
+> [!warning] 本页纪律
+> 把「已交付功能的监管定性」和「营销语言」分开写。凡引 Tesla 对自身功能的定性，以其监管文件与官方支持页为准。信息截至 2026-11-11。
 
 ## 一条主线：名字越叫越满，定性一直是 L2
 
@@ -35,6 +36,9 @@ tags:
 ## Robotaxi：试点是真的，「无人」的成色要看座位上坐没坐人
 
 - **2024-10-10「We, Robot」发布会**：发布双座 Cybercab（无方向盘、无踏板，Musk 称售价 <3 万美元、量产「2026 年或 2027 年之前」）与 20 座 Robovan；Tesla 向 SEC 的文件确认两车为自动驾驶从零设计。来源：[whatledto 事件汇编（引 SEC 文件）](https://whatledto.com/events/tesla-cybercab-robotaxi)
+
+![Cybercab 车内](https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Inside_the_Tesla_Cybercab.jpg/1280px-Inside_the_Tesla_Cybercab.jpg)
+*Cybercab 的座舱（2024 年发布会当晚拍摄）：没有方向盘、没有踏板，只有双座和一块中控屏——这正是它必须走联邦豁免/审计程序的原因。图：Steve Jurvetson，[CC BY 2.0](https://creativecommons.org/licenses/by/2.0)，经 [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Inside_the_Tesla_Cybercab.jpg)。*
 - **奥斯汀试点 2025-06-22 上线**：邀请制，约 10–20 辆 Model Y，南奥斯汀限定区域，6:00–24:00 运营，统一价 4.20 美元/单；**驾驶座无人，但前排副驾坐有 Tesla 安全监控员**（可急停，无方向盘/踏板）——因此不是无监督运营。上线首日即出现车辆短暂逆行等视频，NHTSA 次日即与 Tesla 联系问询。来源：[TechCrunch（2025-06-22）](https://techcrunch.com/2025/06/22/tesla-launches-robotaxi-rides-in-austin-with-big-promises-and-unanswered-questions/)
 - **湾区（2025-07-31）**：上线的是持 CPUC 包车许可（TCP）的叫车服务，**每辆车驾驶座有安全驾驶员**；加州 DMV 名单中 Tesla 仅在「带安全员测试」名单，不在无人测试与部署名单。来源：[dockduty 核对（2026-10-27）](https://dockduty.com/blog/tesla-robotaxi-san-francisco.html)
 - **扩张（2026，据追踪站与 Tesla 页面汇总）**：2026-01-22 起奥斯汀开始有限移除安全监控员；2026 年内达拉斯、休斯顿、迈阿密、奥兰多、坦帕等陆续无人运营；2026-09-03 Cybercab 在奥斯汀加入收费车队；截至 2026-11 上旬约 8 个都会区无人运营 + 湾区带驾驶员服务。来源：[Wikipedia: Tesla Robotaxi](https://en.wikipedia.org/wiki/Tesla_Robotaxi)；[teslanewswire 追踪（2026-11-09）](https://teslanewswire.com/robotaxi-tracker)

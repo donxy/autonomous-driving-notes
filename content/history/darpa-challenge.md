@@ -8,7 +8,8 @@ tags:
 
 # DARPA 挑战赛（2004–2007）
 
-> 本页口径：关键事实逐项给出处；数字有出入处标注「口径差异」，不写死。信息截至 2026-11-11。
+> [!info] 本页口径
+> 关键事实逐项给出处；数字有出入处标注「口径差异」，不写死。信息截至 2026-11-11。
 
 ## 为什么从这里讲起
 
@@ -27,6 +28,9 @@ DARPA（美国国防高级研究计划局）用三届公开竞赛，把「无人
 - 冠军：斯坦福的 **Stanley**（大众 Touareg 改装，Sebastian Thrun 领队），奖金 200 万美元；23 支参赛队中 5 支完赛。
 - 冠军用时两源有 10 秒之差（车队论文与 New Atlas 记 6:53:58，Wikipedia 记 6:53:08），本页取 6:53:58 并注差异。
 - 来源：[New Atlas（2005-10-10）](https://newatlas.com/go/4720/)；[Smithsonian Magazine（2024）](https://www.smithsonianmag.com/smithsonian-institution/how-a-blue-suv-named-stanley-revolutionized-driverless-car-technology-180984882/)；[Stanford Magazine](https://stanfordmag.org/contents/drivers-not-wanted)
+
+![Stanley 本车](https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Stanford_Volkswagon_Touareg_Robotic_Control_Vehicle_%2886757864%29.jpg/1280px-Stanford_Volkswagon_Touareg_Robotic_Control_Vehicle_%2886757864%29.jpg)
+*2005 年冠军车 Stanley 本车（2006 年北美国际车展展出照，非比赛现场）。车顶一排激光雷达与摄像头，就是当年获胜方案的感知配置。图：Global Reactions，[CC BY 2.0](https://creativecommons.org/licenses/by/2.0)，经 [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Stanford_Volkswagon_Touareg_Robotic_Control_Vehicle_(86757864).jpg)。*
 
 ## 2007：Urban Challenge——进入城市环境
 

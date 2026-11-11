@@ -7,7 +7,8 @@ tags:
 
 # 路线之争：激光雷达 vs 纯视觉
 
-> 本页口径：传感器原理与价格数据给出处；厂商路线表述标注「公司主张」。信息截至 2026-11-11。
+> [!info] 本页口径
+> 传感器原理与价格数据给出处；厂商路线表述标注「公司主张」。信息截至 2026-11-11。
 
 ## 先把三类传感器钉清楚
 
@@ -18,6 +19,12 @@ tags:
 | 激光雷达 | 3D 几何（ToF 飞行时间直接测距，d = c·t/2） | 不依赖环境光、几何精确 | 成本曾极高；语义要靠算法补 |
 
 来源：[IBM: What is lidar](https://www.ibm.com/think/topics/lidar)；[NI 传感器测试综述](https://www.ni.com/en/solutions/transportation/adas-and-autonomous-driving-testing/adas-and-autonomous-driving-sensors-and-electronics-test/lidar-role-autonomous-driving-laser-vision-cars.html)
+
+![三类传感器的视场与分工](../assets/sensors.svg)
+*三类传感器的视场形状与分工示意（本站绘制）：摄像头是窄而远的语义之眼，雷达是全天候的测距测速，激光雷达是 360° 的几何测量。*
+
+![激光雷达点云](https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Ouster_OS1-64_lidar_point_cloud_of_intersection_of_Folsom_and_Dore_St%2C_San_Francisco.png/1280px-Ouster_OS1-64_lidar_point_cloud_of_intersection_of_Folsom_and_Dore_St%2C_San_Francisco.png)
+*激光雷达「看到」的世界：Ouster OS1 在旧金山一个路口 18 秒采集、约 2,300 万点配准成的点云正射图。这就是「直接测距」派最有力的论据——几何不需要猜。图：Daniel L. Lu，[CC BY 4.0](https://creativecommons.org/licenses/by/4.0)，经 [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Ouster_OS1-64_lidar_point_cloud_of_intersection_of_Folsom_and_Dore_St,_San_Francisco.png)。*
 
 争论的实质不是「谁看得清」，而是：**深度和几何要靠昂贵硬件直接量，还是靠便宜传感器 + 算法推**。前者把成本花在硬件冗余上，后者把风险押在算法与数据规模上。
 

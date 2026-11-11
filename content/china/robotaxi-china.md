@@ -8,7 +8,8 @@ tags:
 
 # 中国 Robotaxi 格局
 
-> 本页口径：订单/车队数字以公司财报与公告为优先来源并标注口径；监管节点以政府文件原文为准；「第二批 L3 名单」等未公布事项明确标未核实。信息截至 2026-11-11。
+> [!info] 本页口径
+> 订单/车队数字以公司财报与公告为优先来源并标注口径；监管节点以政府文件原文为准；「第二批 L3 名单」等未公布事项明确标未核实。信息截至 2026-11-11。
 
 ## 萝卜快跑（百度 Apollo Go）
 
@@ -38,6 +39,9 @@ tags:
 
 - 上市：2024-10-25 纳斯达克挂牌（WRD），IPO + 私募合计约 4.585 亿美元；2025-11-06 港交所双重主要上市（0800.HK），募资约 23.9 亿港元。公司自称「全球第一家上市的通用自动驾驶公司」属**宣传口径**。来源：[GlobeNewswire（2024-10-28）](https://www.globenewswire.com/news-release/2024/10/28/2969976/0/en/the-world-s-first-ipo-of-universal-autonomous-driving-technology-company-weride-officially-listed-on-nasdaq.html)
 - 业务线：Robotaxi、Robobus、Robovan、Robosweeper、ADAS——三家中业务面最宽。
+
+![文远知行 Mini Robobus](https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/WeRide_Mini_Robobus_in_Guangzhou_International_Biotech_Island_20230124-B.jpg/1280px-WeRide_Mini_Robobus_in_Guangzhou_International_Biotech_Island_20230124-B.jpg)
+*文远知行的 Mini Robobus 在广州国际生物岛运营（2023 年 1 月）。接驳巴士是中国 L4 落地最早成规模的场景之一。图：Tim Wu，[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0)，经 [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:WeRide_Mini_Robobus_in_Guangzhou_International_Biotech_Island_20230124-B.jpg)。*
 - 海外牌照（公司口径 + 财报稿）：截至 2025-12 公司称在 8 国持有自动驾驶牌照；2025 年 10 月获阿布扎比城市级 L4 商业许可（在 Uber 平台启动无人运营）；2025 年 11 月获瑞士联邦道路局无人驾驶许可。来源：[WeRide Q3 2025 财报稿](https://www.weride.ai/posts/pkyhny0xce1znch6nsue8w2j)
 - 新加坡（合作方官方已核实）：2025-09 Grab 宣布与文远推出 Ai.R 接驳服务，被 LTA 选定为榜鹅首个住宅区自动驾驶接驳服务，预计 2026 年初载客。来源：[Grab 官方](https://www.grab.com/sg/press/others/grab-in-partnership-with-weride-unveils-ai-r-autonomous-service-for-punggol/)
 - 规模（公司口径）：2026 年中报（截至 2026-07-31）称全球 L4 车队约 3,400 辆（Robotaxi 1,800+）。来源：[港交所公告](https://www.hkexnews.hk/listedco/listconews/sehk/2026/0812/2026081201281.pdf)

@@ -8,7 +8,8 @@ tags:
 
 # Waymo
 
-> 历史见 [[history/google-to-waymo|从 Google 项目到 Waymo]]，本页只写当下状态。口径：官方披露与公司口径分开标注；安全数据均为公司发布口径。信息截至 2026-11-11。
+> [!info] 本页口径
+> 历史见 [[history/google-to-waymo|从 Google 项目到 Waymo]]，本页只写当下状态。官方披露与公司口径分开标注；安全数据均为公司发布口径。信息截至 2026-11-11。
 
 ## 规模：最新官方数字
 
@@ -33,6 +34,9 @@ Alphabet 2026-10-28 口径：凤凰城、旧金山湾区、洛杉矶、圣迭戈
 - 读法：国际部分目前全部是「宣布 + 测试」阶段，把它与美国本土的运营规模分开看。来源：[Waymo 官方博客：伦敦（2025-10-15）](https://waymo.com/blog/2025/10/hello-london-your-waymo-ride-is-arriving/)
 
 ## 车队与平台
+
+![Waymo 捷豹 I-PACE](https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Waymo_Jaguar_I-Pace_-_Front_Quarter_View_03.jpg/1280px-Waymo_Jaguar_I-Pace_-_Front_Quarter_View_03.jpg)
+*搭载第 5 代 Waymo Driver 的捷豹 I-PACE 在旧金山街头运营（2025 年）。车顶圆顶是主激光雷达，前翼子板与车头还分布着摄像头与雷达。图：9yz，[CC BY 4.0](https://creativecommons.org/licenses/by/4.0)，经 [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Waymo_Jaguar_I-Pace_-_Front_Quarter_View_03.jpg)。*
 
 - 存量主力：捷豹 I-PACE（第 5 代 Driver）。
 - 极氪合作车型更名 **Ojai**（第 6 代 Driver：13 摄像头 / 4 激光雷达 / 6 雷达）：2026 年 2 月员工乘用、5 月向部分公众开放、8 月在旧金山/洛杉矶/凤凰城向所有乘客开放（当时约 300 辆）。
