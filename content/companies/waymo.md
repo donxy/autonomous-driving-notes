@@ -6,7 +6,6 @@ tags:
   - Waymo
 ---
 
-# Waymo
 
 > [!info] 本页口径
 > 历史见 [[history/google-to-waymo|从 Google 项目到 Waymo]]，本页只写当下状态。官方披露与公司口径分开标注；安全数据均为公司发布口径。信息截至 2026-11-11。

@@ -81,9 +81,14 @@ article {
   font-size: 0.92rem;
 }
 
-// 左栏站名：衬线 + 不折行
+// 左栏站名：衬线 + 不折行（不折行必须落在内层 <a> 上，只写容器不生效；
+// 250px 栏宽下字号收到 1.4rem 保证单行）
 .page-title {
   font-family: var(--headerFont);
+  font-size: 1.4rem;
+}
+
+.page-title a {
   white-space: nowrap;
 }
 
@@ -99,12 +104,8 @@ footer {
   padding: 1.6rem 1.5rem 1.3rem;
   border: 1px solid var(--lightgray);
   border-radius: 14px;
-  // 注：kicker 所在区域保持平底（原径向渐变会把橙字对比度压到 3.8:1，taste 检查器抓到后去掉）
-  background: linear-gradient(
-    180deg,
-    color-mix(in srgb, var(--lightgray) 26%, transparent),
-    transparent
-  );
+  // 平底：不用渐变（径向渐变曾把 kicker 对比度压到 3.8:1 已去掉；线性渐变一并去除，保持克制）
+  background-color: color-mix(in srgb, var(--lightgray) 18%, transparent);
 }
 
 .hero-kicker {
@@ -153,6 +154,7 @@ footer {
 }
 
 .note-card {
+  position: relative;
   border: 1px solid var(--lightgray);
   border-radius: 12px;
   padding: 0.95rem 1.05rem;
@@ -167,11 +169,51 @@ footer {
   }
 
   .card-kicker {
-    font-size: 0.72rem;
+    font-size: 0.78rem;
     letter-spacing: 0.18em;
     color: var(--tertiary);
     font-weight: 700;
     margin-bottom: 0.35rem;
+  }
+
+  // 单目标卡：主链接的点击区扩展到整卡（多链接卡不使用此类）
+  a.card-link::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 12px;
+  }
+
+  a:focus-visible {
+    outline: 2px solid var(--secondary);
+    outline-offset: 2px;
+  }
+
+  // 坐标卡：大数字 + 出处行
+  .stat-num {
+    font-family: var(--headerFont);
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--secondary);
+    margin: 0.15rem 0 0.3rem;
+  }
+
+  .stat-label {
+    font-size: 0.92rem;
+    font-weight: 600;
+    color: var(--dark);
+    margin-bottom: 0.3rem;
+  }
+
+  .card-meta {
+    font-size: 0.8rem;
+    line-height: 1.55;
+    color: var(--gray);
+    margin: 0.55rem 0 0;
+    // 盖在整卡点击层之上：出处链接必须保持可点（单目标卡的覆盖层不得吞掉它）
+    position: relative;
+    z-index: 2;
   }
 
   .card-title {
@@ -219,9 +261,13 @@ footer {
 // ③首页文章标题与左栏站名重复；④图谱框过高、且排在目录之前；
 // ⑤小标签字号偏小；⑥坐标卡关键数字不突出、无来源/核查行。
 
-// --- 布局：收窄左右栏，正文优先（断点与 Quartz base 对齐：tablet 800–1200，desktop ≥1200）---
+// --- 布局：收窄左右栏，正文优先 ---
+// 注意：Quartz 的 Grid 容器是 .page > #quartz-body（base.scss 如此定义），
+// 列宽必须写在这个选择器上；写在 .page 上的 grid-template-columns 不生效
+//（2026-11-11 验收实测：此前 1440px 下实际列宽仍是默认 320/750/320）。
+// .page 本身只负责整页最大宽度。断点与 base 对齐：tablet 800–1200，desktop ≥1200。
 @media (min-width: 800px) and (max-width: 1200px) {
-  .page {
+  .page > #quartz-body {
     grid-template-columns: 250px minmax(0, 1fr);
   }
 }
@@ -229,6 +275,9 @@ footer {
 @media (min-width: 1200px) {
   .page {
     max-width: 1400px;
+  }
+
+  .page > #quartz-body {
     grid-template-columns: 250px minmax(0, 1fr) 280px;
   }
 }
@@ -327,60 +376,7 @@ article img {
   }
 }
 
-// --- 卡片：整卡可点（单链接卡）、焦点可见、坐标卡数字与出处行 ---
-.note-card {
-  position: relative;
-
-  .card-kicker {
-    font-size: 0.78rem;
-  }
-
-  a.card-link::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    border-radius: 12px;
-  }
-
-  a:focus-visible {
-    outline: 2px solid var(--secondary);
-    outline-offset: 2px;
-  }
-
-  .stat-num {
-    font-family: var(--headerFont);
-    font-size: 1.8rem;
-    font-weight: 700;
-    line-height: 1.2;
-    color: var(--secondary);
-    margin: 0.15rem 0 0.3rem;
-  }
-
-  .stat-label {
-    font-size: 0.92rem;
-    font-weight: 600;
-    color: var(--dark);
-    margin-bottom: 0.3rem;
-  }
-
-  .card-meta {
-    font-size: 0.8rem;
-    line-height: 1.55;
-    color: var(--gray);
-    margin: 0.55rem 0 0;
-  }
-}
-
-// 首页底部的 WikiLink 索引行：让首页与各笔记在图谱/反链中建立关联
-.index-wikilinks {
-  font-size: 0.85rem;
-  color: var(--gray);
-  line-height: 2;
-
-  a {
-    white-space: nowrap;
-  }
-}
+// （卡片样式已统一收敛到上方 .note-card 单一定义；全站索引改用可折叠 callout，不再需要 .index-wikilinks）
 
 // ===== taste-skill 审阅第一类修复（2026-11-11）=====
 // 全局键盘焦点轮廓（Quartz 的 .clipboard-button:focus 只删轮廓不补替代，一并覆盖）

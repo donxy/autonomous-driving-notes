@@ -6,7 +6,6 @@ tags:
   - 百度
 ---
 
-# 百度 Apollo Go
 
 > [!info] 本页口径
 > 中国格局见 [[china/robotaxi-china|格局篇]]，成本与 UE 见 [[technology/business-model|商业模式篇]]，本页只写百度这一家运营商的来路与现状。订单数字全部为百度财报披露口径，但财报口径本身有过指标切换，第四节专门拆。信息截至 2026-11-11。
