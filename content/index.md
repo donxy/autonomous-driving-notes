@@ -5,12 +5,12 @@ tags:
   - 总览
 ---
 
-<!-- 维护提示：「20 篇笔记」= content 下除本页外的 md 数（时间线 + 19 篇专题）；数字由 scripts/count-notes.mjs 在发布前自动校准，勿手改。 -->
+<!-- 维护提示：「21 篇笔记」= content 下除本页外的 md 数（时间线 + 19 篇专题）；数字由 scripts/count-notes.mjs 在发布前自动校准，勿手改。 -->
 <div class="hero">
   <div class="hero-kicker">历 史 · 技 术 · 公 司 · 监 管</div>
   <p class="hero-title">从实验室演示，到满街跑的无人车</p>
   <p class="hero-sub">四十年，一条主线：谁在开车、谁来兜底、谁为它付钱。这座笔记花园顺着链接，把每个事件连到它的前因、后果和对手。</p>
-  <div class="hero-chips"><span>20 篇笔记</span><span>关键事实逐项出处</span><span>已核实 / 公司口径 / 未核实 分开标注</span><span>信息截至 2026-11-11</span></div>
+  <div class="hero-chips"><span>21 篇笔记</span><span>关键事实逐项出处</span><span>已核实 / 公司口径 / 未核实 分开标注</span><span>信息截至 2026-11-11</span></div>
   <div class="hero-actions"><a class="btn btn-primary" href="./timeline">从时间线开始 →</a><a class="btn btn-ghost" href="#笔记地图">浏览笔记地图</a></div>
 </div>
 
@@ -61,8 +61,8 @@ tags:
   </div>
   <div class="note-card">
     <div class="card-kicker">技 术 路 线</div>
-    <p class="card-links"><a href="./technology/routes">路线之争：激光雷达 vs 纯视觉</a><br><a href="./technology/safety-evidence">安全数据怎么读</a><br><a href="./technology/consumer-adas">乘用车智驾：卖给车主的辅助驾驶</a><br><a href="./technology/trucking">自动驾驶卡车：干线货运线</a></p>
-    <p class="card-links"><a href="./technology">查看全部 7 篇 →</a></p>
+    <p class="card-links"><a href="./technology/routes">路线之争：激光雷达 vs 纯视觉</a><br><a href="./technology/perception-evolution">感知范式演进：从目标列表到占用网络</a><br><a href="./technology/consumer-adas">乘用车智驾：卖给车主的辅助驾驶</a><br><a href="./technology/trucking">自动驾驶卡车：干线货运线</a></p>
+    <p class="card-links"><a href="./technology">查看全部 8 篇 →</a></p>
   </div>
   <div class="note-card">
     <div class="card-kicker">公 司 与 市 场</div>
@@ -77,8 +77,8 @@ tags:
   </div>
 </div>
 
-> [!info]- 全站索引（20 篇 · 点开展开）
-> [[timeline|时间线总览]] · [[history/darpa-challenge|DARPA 挑战赛]] · [[history/google-to-waymo|从 Google 项目到 Waymo]] · [[history/shakeout|行业洗牌]] · [[technology/routes|路线之争]] · [[technology/stack|技术栈速览]] · [[technology/safety-evidence|安全数据怎么读]] · [[technology/business-model|成本与商业模式]] · [[companies/waymo|Waymo]] · [[companies/tesla|Tesla]] · [[companies/cruise|Cruise]] · [[companies/pony-ai|小马智行]] · [[companies/weride|文远知行]] · [[companies/apollo-go|Apollo Go]] · [[technology/consumer-adas|乘用车智驾]] · [[technology/trucking|自动驾驶卡车]] · [[technology/chips|芯片与算力]] · [[china/robotaxi-china|中国 Robotaxi 格局]] · [[regulation/levels-and-rules|自动驾驶分级与监管]] · [[regulation/us-eu-rules|美国与欧盟的监管]]
+> [!info]- 全站索引（21 篇 · 点开展开）
+> [[timeline|时间线总览]] · [[history/darpa-challenge|DARPA 挑战赛]] · [[history/google-to-waymo|从 Google 项目到 Waymo]] · [[history/shakeout|行业洗牌]] · [[technology/routes|路线之争]] · [[technology/stack|技术栈速览]] · [[technology/perception-evolution|感知范式演进]] · [[technology/safety-evidence|安全数据怎么读]] · [[technology/business-model|成本与商业模式]] · [[companies/waymo|Waymo]] · [[companies/tesla|Tesla]] · [[companies/cruise|Cruise]] · [[companies/pony-ai|小马智行]] · [[companies/weride|文远知行]] · [[companies/apollo-go|Apollo Go]] · [[technology/consumer-adas|乘用车智驾]] · [[technology/trucking|自动驾驶卡车]] · [[technology/chips|芯片与算力]] · [[china/robotaxi-china|中国 Robotaxi 格局]] · [[regulation/levels-and-rules|自动驾驶分级与监管]] · [[regulation/us-eu-rules|美国与欧盟的监管]]
 
 ## 本轮调研纠正的三个常见误传
 

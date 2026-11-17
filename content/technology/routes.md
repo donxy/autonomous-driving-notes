@@ -66,5 +66,6 @@ tags:
 
 ## 相关笔记
 
+- [[technology/perception-evolution|感知范式演进：从目标列表到占用网络]]
 - [[technology/stack|技术栈速览：感知 / 预测 / 规划 / 控制]]
 - [[companies/waymo|Waymo]] · [[companies/tesla|Tesla]]

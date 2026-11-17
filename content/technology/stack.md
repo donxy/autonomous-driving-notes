@@ -51,5 +51,6 @@ tags:
 
 ## 相关笔记
 
+- [[technology/perception-evolution|感知范式演进：从目标列表到占用网络]]
 - [[technology/routes|路线之争：激光雷达 vs 纯视觉]]
 - [[timeline|时间线总览]]
