@@ -8,7 +8,7 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "自动驾驶 · 前世今生",
+    pageTitle: "无人驾驶技能树",
     pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,

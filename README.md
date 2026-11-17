@@ -1,4 +1,4 @@
-# 自动驾驶 · 前世今生
+# 无人驾驶技能树
 
 一座关于自动驾驶历史脉络与当下现状的笔记花园，用 [Quartz 4](https://github.com/jackyzha0/quartz) 构建，部署在 GitHub Pages。
 
