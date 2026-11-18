@@ -3,85 +3,58 @@ title: 无人驾驶技能树
 description: 一座关于自动驾驶历史脉络与当下现状的笔记花园——全部页面已完成首轮核源填充。信息截至 2026-11-11。
 tags:
   - 总览
+paths:
+  - kicker: 速览
+    title: 现在的格局
+    desc: 用一条时间线和三篇现状笔记，知道今天谁在跑、跑到哪、被怎么管。
+    notes:
+      - history/timeline
+      - regulation/levels-and-rules
+      - companies/waymo
+      - market/robotaxi-china
+  - kicker: 技术入门
+    title: 一辆无人车怎么「看」和「想」
+    desc: 从技术栈地图出发，到感知表示、传感器路线和算力账。
+    notes:
+      - technology/stack
+      - technology/perception-evolution
+      - technology/routes
+      - technology/chips
+  - kicker: 商业与安全
+    title: 它赚不赚钱，安不安全
+    desc: 经济账、安全数据的读法，以及第一次浪潮里倒下的公司。
+    notes:
+      - market/business-model
+      - regulation/safety-evidence
+      - history/shakeout
+      - companies/cruise
+errata:
+  - wrong: 2016 年 10 月更名
+    right: Waymo 更名宣布于 2016 年 12 月 13 日，不是常说的 2016 年 10 月。
+  - wrong: J3016 最新修订是 2021 年
+    right: SAE J3016 已有 2026 年 9 月版，「最新修订是 2021 年」已经过时。
+  - wrong: 武汉投放 1,000 辆
+    right: 萝卜快跑 2024 年在武汉的实际投放是 400 多辆（武汉市交通运输局澄清），1,000 辆是百度的年内计划口径。
+updates:
+  - date: "2026-11-17"
+    text: 新增《感知范式演进：从目标列表到占用网络》
+  - date: "2026-11-11"
+    text: 全站完成首轮核源，统一「信息截至」日期
 ---
 
-<!-- 维护提示：「21 篇笔记」= content 下除本页外的 md 数（时间线 + 19 篇专题）；数字由 scripts/count-notes.mjs 在发布前自动校准，勿手改。 -->
-<div class="hero">
-  <div class="hero-kicker">历 史 · 技 术 · 公 司 · 监 管</div>
-  <p class="hero-title">从实验室演示，到满街跑的无人车</p>
-  <p class="hero-sub">四十年，一条主线：谁在开车、谁来兜底、谁为它付钱。这座笔记花园顺着链接，把每个事件连到它的前因、后果和对手。</p>
-  <div class="hero-chips"><span>21 篇笔记</span><span>关键事实逐项出处</span><span>已核实 / 公司口径 / 未核实 分开标注</span><span>信息截至 2026-11-11</span></div>
-  <div class="hero-actions"><a class="btn btn-primary" href="./history/timeline">从时间线开始 →</a><a class="btn btn-ghost" href="#笔记地图">浏览笔记地图</a></div>
+<!-- 维护提示：「21 篇」= content 下除各 index.md 外的 md 数，由 scripts/count-notes.mjs 在发布前自动校准，勿手改。路径、勘误、更新记录写在本页 frontmatter，由 SkillTree 组件渲染。 -->
+<div class="home-hero">
+<div class="home-hero-main">
+<div class="home-kicker">四十年 · 五条线 · <span class="note-count">21 篇笔记</span></div>
+<p class="home-title">从实验室演示，<br>到满街跑的无人车</p>
+<p class="home-sub">四十年，一条主线：谁在开车、谁来兜底、谁为它付钱。这座笔记花园顺着链接，把每个事件连到它的前因、后果和对手。</p>
+<div class="home-actions"><a class="home-btn-primary" href="#paths">选一条路开始 →</a><a class="home-btn-ghost" href="#tree">看完整技能树</a></div>
+<div class="home-meta"><span>信息截至 <b class="mono">2026-11-11</b></span><span>证据分级：</span><span class="ev ev-ok">已核实</span><span class="ev ev-co">公司口径</span><span class="ev ev-md">媒体转述</span><span class="ev ev-un">未核实</span></div>
 </div>
-
-> 这是一座**笔记花园**，不是一篇写完就封存的长文。每篇笔记只讲一件事，笔记之间用链接互相牵引。全站写作口径一致：关键事实逐项给出处，现状类数字注明截至日期。
-
-## 三个现在的坐标（截至 2026-11-11）
-
-<div class="card-grid">
-  <div class="note-card">
-    <div class="card-kicker">规 模</div>
-    <div class="stat-num">50 万+ 次/周</div>
-    <p class="stat-label">Waymo 每周全无人付费出行（最新官方数字）</p>
-    <p class="card-desc">萝卜快跑累计全无人订单超 2,300 万单——中美头部第一次站在同一量级。</p>
-    <p class="card-meta">来源：<a href="https://cdn.prod.nntech.io/company-events/reports/4427659d-5ae5-31e6-a271-a19dad46a35e/report.pdf">Alphabet Q1 2026 财报</a>（2026-04-29）；<a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0818/2026081801093_c.pdf">百度 Q2 2026 业绩公告</a>（2026-08-18）· 核查 2026-11-11</p>
-    <p class="card-links"><a href="./companies/waymo">Waymo</a> · <a href="./market/robotaxi-china">中国 Robotaxi 格局</a></p>
-  </div>
-  <div class="note-card">
-    <div class="card-kicker">分 级 落 地</div>
-    <div class="stat-num">2 款车型</div>
-    <p class="stat-label">中国首批 L3 车型获附条件准入（2025 年 12 月）</p>
-    <p class="card-desc">长安深蓝 SL03 与极狐阿尔法 S6，由指定主体在限定路段试点——L3 第一次从发布会名词变成牌照。</p>
-    <p class="card-meta">来源：<a href="https://www.miit.gov.cn/xwfb/gxdt/sjdt/art/2025/art_f734c7074580470593d4018742997640.html">工信部准入通告</a>（2025-12-15）· 核查 2026-11-11</p>
-    <p class="card-links"><a class="card-link" href="./regulation/levels-and-rules">自动驾驶分级与监管</a></p>
-  </div>
-  <div class="note-card">
-    <div class="card-kicker">最 大 落 差</div>
-    <div class="stat-num">L2</div>
-    <p class="stat-label">Tesla 消费级 FSD 在监管文件中的定级</p>
-    <p class="card-desc">其 robotaxi 已在约 8 个美国都会区无人运营，但卖给消费者的系统始终是 L2；2025 年 12 月，加州 DMV 裁定其营销误导。</p>
-    <p class="card-meta">来源：<a href="https://www.dmv.ca.gov/portal/news-and-media/tesla-takes-corrective-action-to-avoid-dmv-suspension/">加州 DMV</a>（裁定 2025-12-16；纠正行动公告 2026-02-17），详见 Tesla 页 · 核查 2026-11-11</p>
-    <p class="card-links"><a class="card-link" href="./companies/tesla">Tesla</a></p>
-  </div>
+<aside class="home-coords" aria-label="现在的三个坐标">
+<div class="home-coords-head"><h2>现在的三个坐标</h2><span class="mono">截至 2026-11-11</span></div>
+<div class="coord"><div class="coord-num">50 万+<small> 次/周</small></div><div class="coord-body"><a class="coord-title" href="./companies/waymo">Waymo 每周全无人付费出行</a><span>2026 年 3 月末数据，Alphabet 一季度财报会披露</span><span class="coord-src">来源：<a href="https://cdn.prod.nntech.io/company-events/reports/4427659d-5ae5-31e6-a271-a19dad46a35e/report.pdf">Alphabet Q1 2026 财报</a>（2026-04-29）</span><span><span class="ev ev-co">公司口径</span></span></div></div>
+<div class="coord"><div class="coord-num">2<small> 款车型</small></div><div class="coord-body"><a class="coord-title" href="./regulation/levels-and-rules">中国首批 L3 车型获附条件准入</a><span>长安深蓝 SL03 与极狐阿尔法 S6，由指定主体在限定路段试点</span><span class="coord-src">来源：<a href="https://www.miit.gov.cn/xwfb/gxdt/sjdt/art/2025/art_f734c7074580470593d4018742997640.html">工信部准入通告</a>（2025-12-15）</span><span><span class="ev ev-ok">已核实 · 工信部</span></span></div></div>
+<div class="coord"><div class="coord-num">L2</div><div class="coord-body"><a class="coord-title" href="./companies/tesla">Tesla 消费级 FSD 在监管文件中的定级</a><span>卖给消费者的系统始终是 L2；2025 年 12 月，加州 DMV 裁定其营销误导</span><span class="coord-src">来源：<a href="https://www.dmv.ca.gov/portal/news-and-media/tesla-takes-corrective-action-to-avoid-dmv-suspension/">加州 DMV</a>（裁定 2025-12-16）</span><span><span class="ev ev-ok">已核实 · 加州 DMV</span></span></div></div>
+</aside>
 </div>
-
-## 推荐阅读路径
-
-- [[history/timeline|时间线总览]] —— 先拉一条主线：1986 年的实验室源头，到 2026 年的 L3 牌照
-- [[history/darpa-challenge|DARPA 挑战赛]] —— 现代自动驾驶的公开起点
-- [[history/google-to-waymo|从 Google 项目到 Waymo]] —— 实验室项目如何变成一家公司
-
-## 笔记地图
-
-<div class="card-grid">
-  <div class="note-card">
-    <div class="card-kicker">历 史 脉 络</div>
-    <p class="card-links"><a href="./history/darpa-challenge">DARPA 挑战赛（2004–2007）</a><br><a href="./history/google-to-waymo">从 Google 项目到 Waymo</a><br><a href="./history/shakeout">行业洗牌：失败与退出者</a><br><a href="./history/timeline">时间线总览</a></p>
-    <p class="card-links"><a href="./history">查看全部 →</a></p>
-  </div>
-  <div class="note-card">
-    <div class="card-kicker">技 术 路 线</div>
-    <p class="card-links"><a href="./technology/routes">路线之争：激光雷达 vs 纯视觉</a><br><a href="./technology/perception-evolution">感知范式演进：从目标列表到占用网络</a><br><a href="./market/consumer-adas">乘用车智驾：卖给车主的辅助驾驶</a><br><a href="./market/trucking">自动驾驶卡车：干线货运线</a></p>
-    <p class="card-links"><a href="./technology">查看全部 8 篇 →</a></p>
-  </div>
-  <div class="note-card">
-    <div class="card-kicker">公 司 与 市 场</div>
-    <p class="card-links"><a href="./companies/waymo">Waymo</a><br><a href="./companies/tesla">Tesla</a><br><a href="./companies/apollo-go">百度 Apollo Go</a><br><a href="./market/robotaxi-china">中国 Robotaxi 格局</a></p>
-    <p class="card-links"><a href="./companies">查看全部 6 家公司 →</a></p>
-  </div>
-  <div class="note-card">
-    <div class="card-kicker">规 则</div>
-    <p class="card-links"><a href="./regulation/levels-and-rules">自动驾驶分级与监管</a><br><a href="./regulation/us-eu-rules">美国与欧盟的监管</a></p>
-    <p class="card-desc">分级在分什么、L3 怎么批、出了事谁负责；美欧两套体系与三方对照。</p>
-    <p class="card-links"><a href="./regulation">查看全部 →</a></p>
-  </div>
-</div>
-
-> [!info]- 全站索引（21 篇 · 点开展开）
-> [[history/timeline|时间线总览]] · [[history/darpa-challenge|DARPA 挑战赛]] · [[history/google-to-waymo|从 Google 项目到 Waymo]] · [[history/shakeout|行业洗牌]] · [[technology/routes|路线之争]] · [[technology/stack|技术栈速览]] · [[technology/perception-evolution|感知范式演进]] · [[regulation/safety-evidence|安全数据怎么读]] · [[market/business-model|成本与商业模式]] · [[companies/waymo|Waymo]] · [[companies/tesla|Tesla]] · [[companies/cruise|Cruise]] · [[companies/pony-ai|小马智行]] · [[companies/weride|文远知行]] · [[companies/apollo-go|Apollo Go]] · [[market/consumer-adas|乘用车智驾]] · [[market/trucking|自动驾驶卡车]] · [[technology/chips|芯片与算力]] · [[market/robotaxi-china|中国 Robotaxi 格局]] · [[regulation/levels-and-rules|自动驾驶分级与监管]] · [[regulation/us-eu-rules|美国与欧盟的监管]]
-
-## 本轮调研纠正的三个常见误传
-
-1. Waymo 更名宣布于 **2016 年 12 月 13 日**，不是常说的 2016 年 10 月。
-2. SAE J3016 已有 **2026 年 9 月版**，「最新修订是 2021 年」已经过时。
-3. 萝卜快跑 2024 年在武汉的实际投放是 **400 多辆**（武汉市交通运输局澄清），不是网传的 1,000 辆——1,000 辆是百度的年内计划口径。
