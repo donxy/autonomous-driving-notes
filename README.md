@@ -1,30 +1,31 @@
 # 无人驾驶技能树
 
-一座关于自动驾驶历史脉络与当下现状的笔记花园，用 [Quartz 4](https://github.com/jackyzha0/quartz) 构建，部署在 GitHub Pages。
+公开站点：https://donxy.github.io/autonomous-driving-notes/
 
-> 当前是**骨架版**：结构与导航已搭好，正文是待填充的提纲。正式调研写入时遵循本站约定——关键事实逐项给出处，区分已核实事实与行业说法 / 宣传口径，涉及最新进展注明信息截至日期。
+基于 Quartz 4 的中文自动驾驶知识站。当前有 21 篇笔记，涵盖历史、技术、公司、中国格局和监管五条内容线。
 
-## 笔记结构
+## 内容结构
 
-- `content/index.md` —— 首页 / 笔记地图
-- `content/timeline.md` —— 时间线总览
-- `content/history/` —— 历史脉络（DARPA 挑战赛、Google → Waymo）
-- `content/technology/` —— 技术路线（路线之争、技术栈速览）
-- `content/companies/` —— 公司（Waymo、Tesla）
-- `content/china/` —— 中国 Robotaxi 格局（待调研）
-- `content/regulation/` —— 分级与监管（待调研）
+- `content/index.md`：首页、推荐阅读与笔记地图。
+- `content/timeline.md`：发展时间线。
+- `content/history/`：历史脉络。
+- `content/technology/`：技术路线。
+- `content/companies/`：公司。
+- `content/china/`：中国 Robotaxi 格局。
+- `content/regulation/`：分级与规则。
+- `content/assets/`：本站矢量图。
 
-笔记之间用 `[[双向链接]]` 互相牵引，站点的关系图与反向链接由此生成。
+关键事实需要提供可追溯来源；区分一手文件、公司披露、媒体转述及未核实信息；现状类判断必须标记信息截至日期。
 
-## 本地预览
+## 开发与发布
 
 ```bash
-npm i
-npx quartz build --serve   # http://localhost:8080
+npm ci
+npx quartz build --serve
 ```
 
-## 部署
+`main` 分支通过 `.github/workflows/deploy.yml` 发布到 GitHub Pages；PR 由 `validate-quartz.yml` 检查构建。
 
-推送到 `main` 后，`.github/workflows/deploy.yml` 自动构建并发布到 GitHub Pages。
+主站共享 CSS `https://donxy.github.io/design/shared.css` 只提供字体、阅读节奏等基础 token，本站独立管理主题色、布局和导航，并提供离线 fallback。
 
-注：三个文件未存入本仓库，构建工作流会在构建前从 Quartz 上游仓库原样取回——`quartz/static/` 下的默认图标（icon.png / og-image.png，二进制）和 `quartz/util/emojimap.json`（约 15 MB，超出文件推送上限）。本仓库也不含 Quartz 上游的 `docs/` 文档目录。
+跨站架构与数据同步说明见 [个人主站工程文档](https://github.com/donxy/donxy.github.io/blob/main/docs/ARCHITECTURE.md)。
