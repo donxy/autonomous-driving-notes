@@ -466,3 +466,67 @@ article {
     }
   }
 }
+
+// ===== 阶段 2：证据标签 =====
+.ev {
+  display: inline-flex;
+  align-items: center;
+  font-family: var(--bodyFont);
+  font-size: 12px;
+  line-height: 1;
+  font-weight: 500;
+  letter-spacing: 0;
+  padding: 4px 7px;
+  border-radius: 999px;
+  white-space: nowrap;
+  vertical-align: 2px;
+  margin: 0 2px;
+  border: 1px solid transparent;
+}
+
+.ev-ok {
+  background: #175e63;
+  color: #ffffff;
+}
+
+.ev-co {
+  background: #f6e6d6;
+  color: #7a3f12;
+  border-color: #e3bb94;
+}
+
+.ev-md {
+  background: transparent;
+  color: #453f36;
+  border: 1px dashed #8a8273;
+}
+
+.ev-un {
+  background: repeating-linear-gradient(135deg, #ece7dd 0 4px, #f7f5f0 4px 8px);
+  color: #5f584d;
+  border: 1px dotted #8a8273;
+}
+
+:root[saved-theme="dark"] {
+  .ev-ok {
+    background: #7fb5ba;
+    color: #0e1a1b;
+  }
+
+  .ev-co {
+    background: #3a2a1c;
+    color: #f0c79a;
+    border-color: #6b4a2b;
+  }
+
+  .ev-md {
+    color: #d6d2c9;
+    border-color: #8a8f97;
+  }
+
+  .ev-un {
+    background: repeating-linear-gradient(135deg, #262a31 0 4px, #1a1d22 4px 8px);
+    color: #c4bfb5;
+    border-color: #8a8f97;
+  }
+}

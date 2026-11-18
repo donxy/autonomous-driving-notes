@@ -22,7 +22,7 @@ tags:
 - 2024-05-15 百度宣布第六代车在武汉投用、年内完成千台部署（此为**计划口径**）；武汉市交通运输局 2024 年 7 月澄清实际投放 400 多辆、非网传 1,000 辆；同期有拥堵投诉与网约车司机生计讨论。来源：[财联社](https://www.cls.cn/detail/1691088)
 
 **出海（逐项，核实程度不一）**
-- **香港**（已核实）：2024 年 11 月获香港首张自动驾驶车辆先导牌照（10 辆，北大屿山），2024 年 12 月开始路测；此后多次扩区至机场岛、东涌、港岛南区数码港、九龙东；2026 年 2 月批准机场岛—东涌—欣澳跨区。来源：[香港运输署官方页](https://www.td.gov.hk/sc/public_services/taoav/index.html)
+- **香港**【已核实】：2024 年 11 月获香港首张自动驾驶车辆先导牌照（10 辆，北大屿山），2024 年 12 月开始路测；此后多次扩区至机场岛、东涌、港岛南区数码港、九龙东；2026 年 2 月批准机场岛—东涌—欣澳跨区。来源：[香港运输署官方页](https://www.td.gov.hk/sc/public_services/taoav/index.html)
 - **迪拜**（已核实部分）：2025 年 3 月与 RTA 签合作，7 月获迪拜首张自动驾驶测试牌照，50 辆 RT6 自 2025 年 8 月公开道路测试；「2028 年扩至 1,000+ 辆」属计划口径。其全无人许可与上线 Uber 的后续节点仅见行业汇总，未独立核官方原文。来源：[StockTitan 转述公告](https://www.stocktitan.net/news/BIDU/baidu-s-apollo-go-granted-dubai-s-first-batch-of-autonomous-driving-wwd3s4w2cron.html)
 - **瑞士**（合作方官方已核实）：与 PostBus 合作品牌 AmiGo，2025 年 12 月起带安全员测试；2026-06 获 FEDRO 特别许可，在东瑞士约 80 km² 开始 hands-free 测试（车内仍有安全员）。来源：[PostBus 官方（2026-06-12）](https://www.postauto.ch/en/about-us-and-news/news/2026/milestone-for-autonomous-mobility-in-switzerland)
 - **平台合作**（公司公告）：2025 年 7 月与 Uber 宣布多年合作（美国与中国大陆以外，先亚洲、中东）；8 月与 Lyft 宣布合作（先德国、英国）。
@@ -31,7 +31,7 @@ tags:
 
 - 上市：2024-11-27 纳斯达克挂牌（PONY），募资约 2.6 亿美元（全额行使超额配售 2.99 亿）；2025-11-06 港交所双重主要上市（2026.HK），募资约 67.07 亿港元。来源：[Nasdaq 官方稿（2024-11-27）](https://www.nasdaq.com/press-release/ponyai-lists-nasdaq-2024-11-27)
 - 运营许可：2025-07 上海发放新一批示范运营牌照后，小马在浦东落地全无人商业运营；至此北上广深四城均有商业化运营许可。来源：[证券时报](https://www.stcn.com/article/detail/2904979.html)
-- 第七代 Robotaxi（公司口径）：2025 年 4 月发布，套件 BOM 成本较上代降 70%；合作车型为广汽埃安、北汽极狐、丰田铂智；2025-11 在北京、广州、深圳开启全无人商业化运营，量产下线超 600 台。来源：[财联社](https://www.cls.cn/detail/2232067)
+- 第七代 Robotaxi【公司口径】：2025 年 4 月发布，套件 BOM 成本较上代降 70%；合作车型为广汽埃安、北汽极狐、丰田铂智；2025-11 在北京、广州、深圳开启全无人商业化运营，量产下线超 600 台。来源：[财联社](https://www.cls.cn/detail/2232067)
 - 规模（公司目标口径，非存量核实）：2025 年 11 月车队超 900 辆、称目标 2026 年 3,000+ 辆。
 
 ## 文远知行（WeRide）
@@ -43,7 +43,7 @@ tags:
 *文远知行的 Mini Robobus 在广州国际生物岛运营（2023 年 1 月）。接驳巴士是中国 L4 落地最早成规模的场景之一。图：Tim Wu，[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0)，经 [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:WeRide_Mini_Robobus_in_Guangzhou_International_Biotech_Island_20230124-B.jpg)。*
 - 海外牌照（公司口径 + 财报稿）：截至 2025-12 公司称在 8 国持有自动驾驶牌照；2025 年 10 月获阿布扎比城市级 L4 商业许可（在 Uber 平台启动无人运营）；2025 年 11 月获瑞士联邦道路局无人驾驶许可。来源：[WeRide Q3 2025 财报稿](https://www.weride.ai/posts/pkyhny0xce1znch6nsue8w2j)
 - 新加坡（合作方官方已核实）：2025-09 Grab 宣布与文远推出 Ai.R 接驳服务，被 LTA 选定为榜鹅首个住宅区自动驾驶接驳服务，预计 2026 年初载客。来源：[Grab 官方](https://www.grab.com/sg/press/others/grab-in-partnership-with-weride-unveils-ai-r-autonomous-service-for-punggol/)
-- 规模（公司口径）：2026 年中报（截至 2026-07-31）称全球 L4 车队约 3,400 辆（Robotaxi 1,800+）。来源：[港交所公告](https://www.hkexnews.hk/listedco/listconews/sehk/2026/0812/2026081201281.pdf)
+- 规模【公司口径】：2026 年中报（截至 2026-07-31）称全球 L4 车队约 3,400 辆（Robotaxi 1,800+）。来源：[港交所公告](https://www.hkexnews.hk/listedco/listconews/sehk/2026/0812/2026081201281.pdf)
 
 ## 其他玩家：两条不同的路
 
