@@ -79,7 +79,7 @@ const config: QuartzConfig = {
       Plugin.ComponentResources(),
       Plugin.ContentPage(),
       Plugin.FolderPage({
-        beforeBody: [Component.Breadcrumbs(), Component.ArticleTitle()],
+        beforeBody: [Component.Breadcrumbs({ rootName: "首页" }), Component.ArticleTitle()],
         pageBody: Component.LineFolder(),
       }),
       Plugin.TagPage(),

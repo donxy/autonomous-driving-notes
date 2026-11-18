@@ -20,11 +20,9 @@ article {
     line-height: 1.78;
   }
 
-  // 章节标题：小号章节感 —— 左侧 accent 竖线 + 充足留白
+  // 章节标题：衬线 + 充足留白（2026-11-17 起去掉左侧竖线）
   h2 {
-    margin-top: 2.4rem;
-    padding-left: 0.6rem;
-    border-left: 4px solid var(--tertiary);
+    margin-top: 2.75rem;
     line-height: 1.35;
   }
 
@@ -40,7 +38,9 @@ article {
     border-collapse: collapse;
 
     th {
-      background-color: var(--highlight);
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--gray);
       text-align: left;
       white-space: nowrap;
     }
@@ -55,12 +55,11 @@ article {
     }
   }
 
-  // 引用块（口径说明等）：淡底 + accent 边
-  blockquote {
-    border-left: 3px solid var(--secondary);
-    background-color: var(--highlight);
-    border-radius: 0 8px 8px 0;
-    padding: 0.6rem 1rem;
+  // 普通引用块（非 callout）
+  blockquote:not(.callout) {
+    border-left: 3px solid var(--rule);
+    padding: 0.2rem 1rem;
+    color: var(--darkgray);
   }
 
   img {
@@ -336,5 +335,86 @@ article {
     background: repeating-linear-gradient(135deg, #262a31 0 4px, #1a1d22 4px 8px);
     color: #c4bfb5;
     border-color: #8a8f97;
+  }
+}
+
+// ===== 阶段 6：笔记页正文 =====
+// callout：统一卡片样式（本页口径 / 本页纪律 / 先说结论），不用左侧粗边框
+article .callout,
+article .callout[data-callout] {
+  --color: var(--secondary);
+  --border: var(--rule);
+  --bg: var(--card);
+  background: var(--card);
+  border: 1px solid var(--rule);
+  border-radius: 14px;
+  padding: 1rem 1.4rem;
+
+  .callout-title {
+    color: var(--secondary);
+    font-size: 13px;
+    letter-spacing: 0.06em;
+    gap: 0.4rem;
+  }
+
+  .callout-icon {
+    background-color: var(--secondary);
+  }
+
+  .callout-content > p,
+  .callout-content li {
+    font-size: 15px;
+    line-height: 1.8;
+  }
+}
+
+article .callout[data-callout="summary"] {
+  --color: var(--tertiary);
+  padding: 1.2rem 1.5rem;
+
+  .callout-title {
+    color: var(--tertiary);
+  }
+
+  .callout-icon {
+    display: none;
+  }
+
+  .callout-content li {
+    font-size: 16px;
+    line-height: 1.75;
+  }
+}
+
+// 表格：卡片容器；手机上横向滚动，右缘渐隐提示可滑动
+article .table-container {
+  border: 1px solid var(--rule);
+  border-radius: 12px;
+  background:
+    linear-gradient(to left, var(--card) 30%, transparent) right center / 32px 100% no-repeat local,
+    linear-gradient(to left, rgba(0, 0, 0, 0.12), transparent) right center / 14px 100% no-repeat scroll,
+    var(--card);
+
+  table {
+    margin: 0;
+  }
+
+  td,
+  th {
+    padding: 0.6rem 0.9rem;
+  }
+}
+
+// 搜索与站名已移入顶栏；桌面端侧栏不再需要顶部大留白
+@media all and (min-width: 800px) {
+  .page > #quartz-body .sidebar.left,
+  .page > #quartz-body .sidebar.right {
+    padding-top: 3rem;
+  }
+}
+
+@media all and (max-width: 800px) {
+  .page > #quartz-body .sidebar.left {
+    padding-top: 0.5rem;
   }
 }

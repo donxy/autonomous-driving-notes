@@ -25,6 +25,12 @@ import Flex from "./Flex"
 import ConditionalRender from "./ConditionalRender"
 import LineFolder from "./pages/LineFolder"
 import SkillTree from "./SkillTree"
+import TopNav from "./TopNav"
+import LineNav from "./LineNav"
+import NoteMeta from "./NoteMeta"
+import PrevNext from "./PrevNext"
+import EvidenceLegend from "./EvidenceLegend"
+import ReadingAids from "./ReadingAids"
 
 export {
   ArticleTitle,
@@ -54,4 +60,10 @@ export {
   ConditionalRender,
   LineFolder,
   SkillTree,
+  TopNav,
+  LineNav,
+  NoteMeta,
+  PrevNext,
+  EvidenceLegend,
+  ReadingAids,
 }

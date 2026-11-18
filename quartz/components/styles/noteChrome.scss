@@ -1,0 +1,323 @@
+@use "../../styles/variables.scss" as *;
+
+// ===== 左栏：本线导航 =====
+.line-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  width: 100%;
+
+  .line-nav-head {
+    font-size: 13px;
+    font-weight: 400;
+    color: var(--gray);
+    background: none;
+    padding: 0 0.75rem 0.5rem;
+  }
+
+  ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    margin: 0;
+  }
+
+  a {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.6rem;
+    padding: 0.6rem 0.75rem;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--darkgray);
+    background: none;
+    text-decoration: none;
+
+    &:hover {
+      color: var(--secondary);
+    }
+
+    .mono {
+      font-size: 12px;
+      color: var(--gray);
+      flex: none;
+    }
+
+    &.is-current {
+      background: var(--teal-soft);
+      color: var(--secondary);
+      font-weight: 500;
+    }
+  }
+}
+
+// ===== 元信息行 =====
+p.note-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem 1.4rem;
+  margin: 0.8rem 0 0;
+  padding: 0.75rem 0;
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--gray);
+
+  b {
+    color: var(--dark);
+    font-weight: 500;
+  }
+
+  .note-meta-pos {
+    display: none;
+  }
+
+  @media all and ($mobile) {
+    .note-meta-pos {
+      display: inline;
+    }
+  }
+}
+
+// ===== 上一篇 / 下一篇 =====
+.prev-next {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 1rem 0 2rem;
+
+  a {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    padding: 1.1rem 1.25rem;
+    border: 1px solid var(--rule);
+    border-radius: 12px;
+    background: var(--card);
+    color: var(--dark);
+    font-weight: 400;
+    text-decoration: none;
+
+    &:hover {
+      border-color: var(--secondary);
+    }
+  }
+
+  a.pn-next {
+    grid-column: 2;
+    text-align: right;
+    border-color: var(--secondary);
+  }
+
+  .pn-kicker {
+    font-size: 13px;
+    color: var(--gray);
+  }
+
+  .pn-title {
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  @media all and ($mobile) {
+    grid-template-columns: minmax(0, 1fr);
+
+    a.pn-next {
+      grid-column: 1;
+    }
+  }
+}
+
+// ===== 右栏：证据图例 =====
+.evidence-legend {
+  h3 {
+    font-size: 1rem;
+    margin: 0 0 0.6rem;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  li {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 0;
+    font-size: 13px;
+    color: var(--darkgray);
+
+    .ev {
+      flex: none;
+      margin: 0;
+    }
+  }
+}
+
+// ===== 阅读进度条 + 手机目录 =====
+.reading-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--rule);
+  z-index: 10;
+
+  span {
+    display: block;
+    height: 3px;
+    width: 0;
+    background: var(--secondary);
+  }
+}
+
+.toc-fab {
+  display: none;
+}
+
+.toc-sheet {
+  display: none;
+}
+
+@media all and ($mobile) {
+  // 给右下角的「目录」按钮留出位置，页尾的「下一篇」不被遮住
+  body:has(.toc-fab) #quartz-root {
+    padding-bottom: 80px;
+  }
+
+  .toc-fab {
+    display: inline-flex;
+    align-items: center;
+    position: fixed;
+    right: 16px;
+    bottom: calc(16px + env(safe-area-inset-bottom));
+    z-index: 9;
+    min-height: 48px;
+    padding: 0 1.2rem;
+    border: 1px solid var(--rule);
+    border-radius: 999px;
+    background: var(--card);
+    color: var(--dark);
+    font: inherit;
+    font-size: 15px;
+    font-weight: 500;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+  }
+
+  .toc-sheet[open] {
+    display: block;
+    position: fixed;
+    inset: auto 0 0 0;
+    margin: 0;
+    width: 100%;
+    max-width: 100%;
+    max-height: 75vh;
+    overflow-y: auto;
+    box-sizing: border-box;
+    padding: 0.6rem 1.25rem calc(1.4rem + env(safe-area-inset-bottom));
+    border: 0;
+    border-top: 1px solid var(--rule);
+    border-radius: 18px 18px 0 0;
+    background: var(--card);
+    color: var(--dark);
+
+    &::backdrop {
+      background: rgba(8, 9, 11, 0.5);
+    }
+  }
+
+  .toc-sheet-grip {
+    width: 40px;
+    height: 4px;
+    border-radius: 999px;
+    background: var(--rule);
+    margin: 0 auto 0.9rem;
+  }
+
+  .toc-sheet-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 0.4rem;
+    font-size: 15px;
+    font-weight: 500;
+
+    .toc-sheet-pct {
+      font-size: 12px;
+      font-weight: 400;
+      color: var(--gray);
+    }
+  }
+
+  .toc-sheet ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .toc-sheet li {
+    margin: 0;
+
+    &.is-sub a {
+      padding-left: 1.6rem;
+      font-size: 14px;
+    }
+  }
+
+  .toc-sheet li a {
+    display: flex;
+    align-items: center;
+    min-height: 44px;
+    padding: 0 0.75rem;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--darkgray);
+    background: none;
+
+    &.is-current {
+      background: var(--teal-soft);
+      color: var(--secondary);
+      font-weight: 500;
+    }
+  }
+
+  a.toc-sheet-next {
+    margin-top: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.6rem;
+    min-height: 52px;
+    padding: 0 1rem;
+    border-radius: 12px;
+    border: 1px solid var(--secondary);
+    background: none;
+    color: var(--dark);
+    font-weight: 400;
+
+    span {
+      font-size: 13px;
+      color: var(--gray);
+    }
+
+    b {
+      font-size: 15px;
+      font-weight: 500;
+      text-align: right;
+    }
+  }
+}

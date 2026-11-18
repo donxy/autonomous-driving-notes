@@ -1,0 +1,154 @@
+@use "../../styles/variables.scss" as *;
+
+header.site-topbar {
+  display: block;
+  margin: 0;
+  border-bottom: 1px solid var(--rule);
+  background: var(--light);
+  position: relative;
+  z-index: 3;
+}
+
+.site-topbar-inner {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0.7rem 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 1.5rem;
+  box-sizing: border-box;
+}
+
+a.site-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  color: var(--secondary);
+  text-decoration: none;
+  background: none;
+  padding: 0;
+
+  span {
+    font-family: var(--headerFont);
+    font-size: 19px;
+    font-weight: 700;
+    color: var(--dark);
+    white-space: nowrap;
+  }
+
+  .brand-tip {
+    fill: var(--tertiary);
+    stroke: var(--tertiary);
+  }
+}
+
+.site-lines {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.15rem;
+  flex: 1 1 auto;
+
+  a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    padding: 0 0.75rem;
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--darkgray);
+    background: none;
+    border-radius: 0;
+    text-decoration: none;
+
+    &:hover {
+      color: var(--secondary);
+    }
+
+    &.is-current {
+      color: var(--secondary);
+      font-weight: 500;
+      box-shadow: inset 0 -2px 0 var(--secondary);
+    }
+  }
+}
+
+.site-tools {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  .search {
+    max-width: none;
+    min-width: 0;
+  }
+
+  .search > .search-button {
+    height: 44px;
+    min-width: 220px;
+    border-radius: 10px;
+    border-color: var(--rule);
+    background: var(--card);
+    padding-right: 0.6rem;
+
+    &::after {
+      content: "⌘K";
+      margin-left: auto;
+      font-family: var(--codeFont);
+      font-size: 12px;
+      color: var(--gray);
+      border: 1px solid var(--rule);
+      border-radius: 6px;
+      padding: 2px 6px;
+    }
+  }
+
+  .darkmode,
+  .readermode {
+    width: 44px;
+    height: 44px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media all and ($mobile) {
+  .site-topbar-inner {
+    padding: 0.4rem 0.6rem 0.4rem 1rem;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 0.4rem;
+  }
+
+  a.site-brand span {
+    font-size: 17px;
+  }
+
+  .site-lines {
+    display: none;
+  }
+
+  .site-tools {
+    margin-left: auto;
+
+    .search > .search-button {
+      min-width: 0;
+      width: 44px;
+      padding: 0;
+      justify-content: center;
+      border: 0;
+      background: transparent;
+
+      & > p,
+      &::after {
+        display: none;
+      }
+    }
+
+    .readermode {
+      display: none;
+    }
+  }
+}
