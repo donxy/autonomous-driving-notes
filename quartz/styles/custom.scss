@@ -3,10 +3,11 @@
 // ===== 无人驾驶技能树（原名「自动驾驶 · 前世今生」，2026-11-17 改名）—— 视觉升级（2026-11-11）=====
 // 字体：系统栈，标题衬线（编辑感）、正文无衬线；不加载任何网络字体。
 :root {
-  --headerFont: "Noto Serif SC", "Songti SC", "STSong", "SimSun", serif;
-  --bodyFont: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB",
-    "Microsoft YaHei", "Noto Sans SC", "Source Han Sans SC", sans-serif;
-  --codeFont: ui-monospace, "SF Mono", SFMono-Regular, Menlo, Consolas, monospace;
+  --headerFont: "Noto Serif SC", "Source Han Serif SC", "Songti SC", "STSong", "SimSun", serif;
+  --bodyFont: "Noto Sans SC", "Source Han Sans SC", "PingFang SC", "Hiragino Sans GB",
+    "Microsoft YaHei", -apple-system, BlinkMacSystemFont, sans-serif;
+  --codeFont: "JetBrains Mono", "SF Mono", SFMono-Regular, Menlo, Consolas, "Liberation Mono",
+    monospace;
 }
 
 // 正文阅读感：行高与字距为中文长文调校
@@ -424,5 +425,44 @@ article img {
     display: inline-flex;
     align-items: center;
     min-height: 44px;
+  }
+}
+
+
+// ===== 界面升级（2026-11-17）· 阶段 1：设计令牌 =====
+:root {
+  --card: #fffdf9;
+  --rule: #e1dacd;
+  --teal-soft: #dcebea;
+  --paper-2: #efebe3;
+}
+
+:root[saved-theme="dark"] {
+  --card: #1d2026;
+  --rule: #2a2e35;
+  --teal-soft: #23343a;
+  --paper-2: #191c21;
+}
+
+.mono {
+  font-family: var(--codeFont);
+  font-variant-numeric: tabular-nums;
+}
+
+article {
+  p,
+  li {
+    font-size: 17px;
+    line-height: 1.9;
+  }
+}
+
+@media (max-width: 800px) {
+  article {
+    p,
+    li {
+      font-size: 16px;
+      line-height: 1.85;
+    }
   }
 }
