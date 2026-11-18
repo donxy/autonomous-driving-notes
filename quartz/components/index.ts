@@ -31,6 +31,7 @@ import NoteMeta from "./NoteMeta"
 import PrevNext from "./PrevNext"
 import EvidenceLegend from "./EvidenceLegend"
 import ReadingAids from "./ReadingAids"
+import SiteFooter from "./SiteFooter"
 
 export {
   ArticleTitle,
@@ -66,4 +67,5 @@ export {
   PrevNext,
   EvidenceLegend,
   ReadingAids,
+  SiteFooter,
 }

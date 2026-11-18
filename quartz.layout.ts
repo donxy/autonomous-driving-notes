@@ -34,7 +34,7 @@ export const sharedPageComponents: SharedLayout = {
     Component.PrevNext(),
     Component.ReadingAids(),
   ],
-  footer: Component.Footer({
+  footer: Component.SiteFooter({
     links: {
       "本站源码（GitHub）": "https://github.com/donxy/autonomous-driving-notes",
       RSS: "https://donxy.github.io/autonomous-driving-notes/index.xml",
