@@ -38,7 +38,23 @@ export const defaultContentPageLayout: PageLayout = {
         { Component: Component.ReaderMode() },
       ],
     }),
-    Component.Explorer(),
+    Component.Explorer({
+      // 五条线固定顺序；线内按 frontmatter 的 order（Explorer 在浏览器端运行，取不到 frontmatter，故在此硬编码）
+      sortFn: (a, b) => {
+        const rank: Record<string, number> = {
+          history: 1, technology: 2, market: 3, companies: 4, regulation: 5,
+          timeline: 1, "darpa-challenge": 2, "google-to-waymo": 3, shakeout: 4,
+          stack: 1, "perception-evolution": 2, routes: 3, chips: 4,
+          "business-model": 1, "robotaxi-china": 2, "consumer-adas": 3, trucking: 4,
+          waymo: 1, tesla: 2, cruise: 3, "apollo-go": 4, "pony-ai": 5, weride: 6,
+          "safety-evidence": 1, "levels-and-rules": 2, "us-eu-rules": 3,
+        }
+        const ra = rank[a.slugSegment] ?? 99
+        const rb = rank[b.slugSegment] ?? 99
+        if (ra !== rb) return ra - rb
+        return a.displayName.localeCompare(b.displayName)
+      },
+    }),
   ],
   right: [
     Component.DesktopOnly(Component.TableOfContents()),
@@ -62,7 +78,23 @@ export const defaultListPageLayout: PageLayout = {
         { Component: Component.Darkmode() },
       ],
     }),
-    Component.Explorer(),
+    Component.Explorer({
+      // 五条线固定顺序；线内按 frontmatter 的 order（Explorer 在浏览器端运行，取不到 frontmatter，故在此硬编码）
+      sortFn: (a, b) => {
+        const rank: Record<string, number> = {
+          history: 1, technology: 2, market: 3, companies: 4, regulation: 5,
+          timeline: 1, "darpa-challenge": 2, "google-to-waymo": 3, shakeout: 4,
+          stack: 1, "perception-evolution": 2, routes: 3, chips: 4,
+          "business-model": 1, "robotaxi-china": 2, "consumer-adas": 3, trucking: 4,
+          waymo: 1, tesla: 2, cruise: 3, "apollo-go": 4, "pony-ai": 5, weride: 6,
+          "safety-evidence": 1, "levels-and-rules": 2, "us-eu-rules": 3,
+        }
+        const ra = rank[a.slugSegment] ?? 99
+        const rb = rank[b.slugSegment] ?? 99
+        if (ra !== rb) return ra - rb
+        return a.displayName.localeCompare(b.displayName)
+      },
+    }),
   ],
   right: [],
 }
