@@ -5,6 +5,8 @@ tags:
   - 监管
   - 美国
   - 欧盟
+order: 3
+asof: 2026-11-11
 ---
 
 
@@ -15,7 +17,7 @@ tags:
 
 - 美国至今**没有一部综合性联邦自动驾驶法**：车辆安全标准（FMVSS）归联邦，驾驶行为与运营许可归各州。SELF DRIVE Act 2017 年过了众议院、未成法（2026 年 2 月又以新案号重新提出，仍在国会）；AV START Act 2018 年在参议院搁浅，再未通过。
 - FMVSS 是为有人驾驶写的（方向盘、踏板、后视镜都是条文假设）：不符合标准的无方向盘车型只能走**豁免**——每 12 个月上限 **2,500 辆**、单次最长 2 年。这是美国一切专用无人车规模的天花板，Zoox 与 Cruise Origin 都撞在它上面。
-- NHTSA 不做上市前审批：厂商**自我认证**合规，联邦事后以缺陷调查、召回与常设通用命令（事故报告，见 [[technology/safety-evidence|安全篇]]）监管——「先上路、再问责」是美国模式的准确概括。
+- NHTSA 不做上市前审批：厂商**自我认证**合规，联邦事后以缺陷调查、召回与常设通用命令（事故报告，见 [[regulation/safety-evidence|安全篇]]）监管——「先上路、再问责」是美国模式的准确概括。
 
 来源：[美国国会研究处：自动驾驶车辆报告](https://www.everycrsreport.com/changes/2025-07-22_R48605_bda07e072326753c275f5629f700d4c5fb08801f__2026-03-23_R48605_a3b7fe1e492259f4d124eda6a51588c8b188eb5a.html)
 
@@ -53,7 +55,7 @@ tags:
 ## 2026：第一个全球法规，与它的效力边界
 
 - **2026 年 6 月 24 日**，UNECE WP.29 通过首个 **ADS 全球技术法规（GTR）**及配套 UN 法规，由中、欧、美、英、日、加共同推动，覆盖包括 L4 在内的自动驾驶系统——这是第一套全球统一的 ADS 规则文本。
-- 核心要求是绩效导向的：系统须「无不合理风险」，驾驶表现至少不低于「胜任且谨慎的人类驾驶员」；厂商须构建**安全案例**，覆盖设计、验证（仿真 + 场地 + 道路）与部署后监测的全生命周期（与 [[technology/safety-evidence|安全篇]]讲的评估方法正好接上）。
+- 核心要求是绩效导向的：系统须「无不合理风险」，驾驶表现至少不低于「胜任且谨慎的人类驾驶员」；厂商须构建**安全案例**，覆盖设计、验证（仿真 + 场地 + 道路）与部署后监测的全生命周期（与 [[regulation/safety-evidence|安全篇]]讲的评估方法正好接上）。
 - 效力不对称是读这条新闻时最容易漏的一句：对欧盟、英国、日本等《1958 年协定》缔约方，配套 UN 法规生效后有约束力；美国与中国是《1998 年协定》缔约方，GTR 只要求其「认真考虑」国内转化、可以附理由不采纳。所以它首先是欧洲规则的全球化文本，而不是明天就约束美国企业的世界法。
 
 来源：[TomTom 新闻室：UN 通过首个 ADS 全球法规（2026-06）](https://www.tomtom.com/newsroom/news/un-adopts-the-first-global-regulation-allowing-fully-autonomous-vehicles/)
@@ -70,5 +72,5 @@ tags:
 
 ## 相关笔记
 
-- [[regulation/levels-and-rules|自动驾驶分级与监管]] · [[technology/safety-evidence|安全数据怎么读]] · [[technology/consumer-adas|乘用车智驾：卖给车主的辅助驾驶]]
-- [[companies/cruise|Cruise：从估值顶点到关停]] · [[history/shakeout|行业洗牌：失败与退出者]] · [[timeline|时间线总览]]
+- [[regulation/levels-and-rules|自动驾驶分级与监管]] · [[regulation/safety-evidence|安全数据怎么读]] · [[market/consumer-adas|乘用车智驾：卖给车主的辅助驾驶]]
+- [[companies/cruise|Cruise：从估值顶点到关停]] · [[history/shakeout|行业洗牌：失败与退出者]] · [[history/timeline|时间线总览]]

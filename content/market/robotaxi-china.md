@@ -4,6 +4,10 @@ description: 萝卜快跑、小马智行、文远知行的规模与出海，其�
 tags:
   - 中国
   - Robotaxi
+order: 2
+asof: 2026-11-11
+aliases:
+  - china/robotaxi-china
 ---
 
 
@@ -69,4 +73,4 @@ tags:
 ## 相关笔记
 
 - [[companies/waymo|Waymo]] · [[companies/pony-ai|小马智行]] · [[companies/weride|文远知行]] · [[companies/apollo-go|百度 Apollo Go]]
-- [[technology/business-model|Robotaxi 的成本与商业模式]] · [[regulation/levels-and-rules|自动驾驶分级与监管]]
+- [[market/business-model|Robotaxi 的成本与商业模式]] · [[regulation/levels-and-rules|自动驾驶分级与监管]]

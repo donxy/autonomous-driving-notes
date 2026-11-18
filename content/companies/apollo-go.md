@@ -4,11 +4,13 @@ description: 百度萝卜快跑专篇——从汽车大脑与 Apollo 开放平�
 tags:
   - 公司
   - 百度
+order: 4
+asof: 2026-11-11
 ---
 
 
 > [!info] 本页口径
-> 中国格局见 [[china/robotaxi-china|格局篇]]，成本与 UE 见 [[technology/business-model|商业模式篇]]，本页只写百度这一家运营商的来路与现状。订单数字全部为百度财报披露口径，但财报口径本身有过指标切换，第四节专门拆。信息截至 2026-11-11。
+> 中国格局见 [[market/robotaxi-china|格局篇]]，成本与 UE 见 [[market/business-model|商业模式篇]]，本页只写百度这一家运营商的来路与现状。订单数字全部为百度财报披露口径，但财报口径本身有过指标切换，第四节专门拆。信息截至 2026-11-11。
 
 ## 源头：汽车大脑与「自动驾驶的安卓」（2013–2017）
 
@@ -54,7 +56,7 @@ tags:
 ## 技术与安全宣称的证据等级
 
 - Apollo ADFM（2024 年 5 月发布）：百度称其为「全球首个支持 L4 的自动驾驶大模型」，并称安全性「高于人类驾驶员 10 倍以上」——均为公司自述，无独立验证。
-- 安全数字：2024 年百度称其车辆实际出险率仅为人类司机的 1/14；2026 年二季度财报口径称每 1,440 万公里发生一次气囊弹出。两者都是公司单方数据、无第三方审计，与 Waymo 的 Swiss Re 索赔研究（合作研究）或 Safety Impact Hub（自评但方法公开）在证据等级上不是一档，横比时先看 [[technology/safety-evidence|安全数据怎么读]]。
+- 安全数字：2024 年百度称其车辆实际出险率仅为人类司机的 1/14；2026 年二季度财报口径称每 1,440 万公里发生一次气囊弹出。两者都是公司单方数据、无第三方审计，与 Waymo 的 Swiss Re 索赔研究（合作研究）或 Safety Impact Hub（自评但方法公开）在证据等级上不是一档，横比时先看 [[regulation/safety-evidence|安全数据怎么读]]。
 - 2026 年 11 月，百度披露世界模型「Apollo World」已用于 Apollo Go 的测试验证【公司口径】。
 
 ## 出海三路
@@ -74,5 +76,5 @@ tags:
 
 ## 相关笔记
 
-- [[china/robotaxi-china|中国 Robotaxi 格局]] · [[companies/pony-ai|小马智行]] · [[companies/weride|文远知行]]
-- [[technology/business-model|Robotaxi 的成本与商业模式]] · [[technology/safety-evidence|安全数据怎么读]] · [[timeline|时间线总览]]
+- [[market/robotaxi-china|中国 Robotaxi 格局]] · [[companies/pony-ai|小马智行]] · [[companies/weride|文远知行]]
+- [[market/business-model|Robotaxi 的成本与商业模式]] · [[regulation/safety-evidence|安全数据怎么读]] · [[history/timeline|时间线总览]]

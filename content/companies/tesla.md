@@ -4,6 +4,8 @@ description: Tesla 的 Autopilot/FSD 演进、纯视觉路线、Robotaxi 试点�
 tags:
   - 公司
   - Tesla
+order: 2
+asof: 2026-11-11
 ---
 
 
@@ -54,5 +56,5 @@ tags:
 
 ## 相关笔记
 
-- [[regulation/levels-and-rules|自动驾驶分级与监管]] · [[technology/safety-evidence|安全数据怎么读]]
-- [[companies/waymo|Waymo]] · [[technology/business-model|Robotaxi 的成本与商业模式]] · [[timeline|时间线总览]]
+- [[regulation/levels-and-rules|自动驾驶分级与监管]] · [[regulation/safety-evidence|安全数据怎么读]]
+- [[companies/waymo|Waymo]] · [[market/business-model|Robotaxi 的成本与商业模式]] · [[history/timeline|时间线总览]]

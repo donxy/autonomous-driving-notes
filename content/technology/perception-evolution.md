@@ -4,6 +4,9 @@ description: 感知系统到底该把世界表示成什么——目标列表、B
 tags:
   - 技术
   - 感知
+order: 2
+asof: 2026-11-17
+badge: new
 ---
 
 > [!info] 本页口径
@@ -84,5 +87,5 @@ BEV 为什么赢：单一的度量坐标系装下所有传感器与任务；时�
 - [[technology/routes|路线之争：纯视觉 vs 激光雷达，及端到端]]——本篇是它的上游：先有表示，才有路线之争
 - [[technology/stack|技术栈速览：从传感器到执行器]]——本篇展开的是其中「感知」一环
 - [[technology/chips|芯片与算力：TOPS 背后的生意]]——稠密体素与大网格的算力账在那边算
-- [[technology/consumer-adas|乘用车智驾：中国市场的另一条战线]]——量产声称的发布方们都在那条战线里
-- [[timeline|时间线：关键节点速览]]
+- [[market/consumer-adas|乘用车智驾：中国市场的另一条战线]]——量产声称的发布方们都在那条战线里
+- [[history/timeline|时间线：关键节点速览]]

@@ -4,6 +4,8 @@ description: 文远知行专篇——另一个百度出身的创始人、广州�
 tags:
   - 公司
   - 文远知行
+order: 6
+asof: 2026-11-11
 ---
 
 
@@ -62,11 +64,11 @@ tags:
 
 - 2025 年三季度（财报）：总收入 1.71 亿元人民币（同比 +144%），其中 robotaxi 收入 3,530 万元（同比 +761%）、占 20.7%；毛利率 32.9%；净亏损 3.07 亿元，同比收窄约七成。
 - 截至 2025 年 10 月 31 日：全球车队超 1,600 辆，其中 robotaxi 近 750 辆；在 11 国、30 多城测试或运营。
-- 读法：收入增速很快、亏损收窄也真实，但 robotaxi 占收入只有两成——这家公司的收入结构目前更像「多产品线的自动驾驶供应商」，而不是纯 robotaxi 运营商。UE 与成本口径见 [[technology/business-model|商业模式篇]]。
+- 读法：收入增速很快、亏损收窄也真实，但 robotaxi 占收入只有两成——这家公司的收入结构目前更像「多产品线的自动驾驶供应商」，而不是纯 robotaxi 运营商。UE 与成本口径见 [[market/business-model|商业模式篇]]。
 
 来源：[文远知行 2025 Q3 财报](https://files.quartr.com/reports/d9446-2025-11-24-10-55-46.pdf)
 
 ## 相关笔记
 
-- [[companies/pony-ai|小马智行]] · [[companies/apollo-go|百度 Apollo Go]] · [[china/robotaxi-china|中国 Robotaxi 格局]]
-- [[technology/business-model|Robotaxi 的成本与商业模式]] · [[timeline|时间线总览]]
+- [[companies/pony-ai|小马智行]] · [[companies/apollo-go|百度 Apollo Go]] · [[market/robotaxi-china|中国 Robotaxi 格局]]
+- [[market/business-model|Robotaxi 的成本与商业模式]] · [[history/timeline|时间线总览]]

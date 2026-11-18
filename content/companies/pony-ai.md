@@ -4,11 +4,13 @@ description: 小马智行专篇——两个百度出身的创始人、丰田的 
 tags:
   - 公司
   - 小马智行
+order: 5
+asof: 2026-11-11
 ---
 
 
 > [!info] 本页口径
-> 中国 Robotaxi 格局见 [[china/robotaxi-china|格局篇]]，本页只写小马智行一家。许可类事实以监管方发布为准；车队、成本与盈亏平衡类数字多为公司口径，逐项标注。信息截至 2026-11-11。
+> 中国 Robotaxi 格局见 [[market/robotaxi-china|格局篇]]，本页只写小马智行一家。许可类事实以监管方发布为准；车队、成本与盈亏平衡类数字多为公司口径，逐项标注。信息截至 2026-11-11。
 
 ## 两个百度人（2016–2018）
 
@@ -55,7 +57,7 @@ tags:
 ## 第七代与千辆之约（2025）
 
 - **2025 年 4 月 23 日**上海车展发布第七代（Gen-7）系统与三款量产车型：丰田 bZ4X、北汽极狐阿尔法 T5、广汽埃安第二代 AION V；配置含 9 颗激光雷达、14 颗摄像头、4 颗毫米波雷达。
-- 公司口径的成本宣称：套件 100% 车规级、BOM 成本较上一代降 70%、设计寿命 10 年/60 万公里——只有相对降幅，没有绝对价格（详见 [[technology/business-model|商业模式篇]]的口径说明）。
+- 公司口径的成本宣称：套件 100% 车规级、BOM 成本较上一代降 70%、设计寿命 10 年/60 万公里——只有相对降幅，没有绝对价格（详见 [[market/business-model|商业模式篇]]的口径说明）。
 - 量产进度（财报披露）：广汽车型 2025 年 6 月、极狐 T5 车型 7 月先后下线；截至 2025 年 11 月 23 日全车队 961 辆（其中 Gen-7 667 辆），兑现其「2025 年底 1,000 辆」目标的大部分。
 - 公司称 Gen-7 已在广州实现城市级单车 UE 盈亏平衡（单车日均净收入 299 元，财报中的管理层测算，非审计结论）。
 
@@ -85,5 +87,5 @@ tags:
 
 ## 相关笔记
 
-- [[china/robotaxi-china|中国 Robotaxi 格局]] · [[companies/weride|文远知行]] · [[companies/apollo-go|百度 Apollo Go]] · [[technology/business-model|Robotaxi 的成本与商业模式]]
-- [[companies/waymo|Waymo]] · [[companies/cruise|Cruise：从估值顶点到关停]] · [[timeline|时间线总览]]
+- [[market/robotaxi-china|中国 Robotaxi 格局]] · [[companies/weride|文远知行]] · [[companies/apollo-go|百度 Apollo Go]] · [[market/business-model|Robotaxi 的成本与商业模式]]
+- [[companies/waymo|Waymo]] · [[companies/cruise|Cruise：从估值顶点到关停]] · [[history/timeline|时间线总览]]

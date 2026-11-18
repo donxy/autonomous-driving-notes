@@ -5,6 +5,8 @@ tags:
   - 历史
   - Waymo
   - Google
+order: 3
+asof: 2026-11-11
 ---
 
 
@@ -58,4 +60,4 @@ tags:
 
 - [[history/darpa-challenge|DARPA 挑战赛（2004–2007）]]
 - [[companies/waymo|Waymo]]
-- [[timeline|时间线总览]]
+- [[history/timeline|时间线总览]]

@@ -4,6 +4,8 @@ description: 英伟达 Thor 的「2000」到底是什么单位、特斯拉自研
 tags:
   - 技术
   - 芯片
+order: 4
+asof: 2026-11-11
 ---
 
 
@@ -43,7 +45,7 @@ tags:
 
 - 美国出口管制（BIS 的 ECCN 3A090）以总处理性能与内存带宽双门槛为准，指向的是**数据中心级训练/推理 GPU**（A100/H100 这一级）。Orin、Thor 这类车载 SoC 远低于门槛，**不在限制之列、一直在对华正常供货**。所以「国产车载芯片是被断供逼出来的」这个流行叙事不成立——真实驱动是成本与定价权、供应链风险预期、以及软硬协同的迭代效率。
 - 车载芯片真正的管制敞口在**制造端**：先进制程代工、EDA 与高端 IP 受外国直接产品规则约束。黑芝麻 A2000 流片后经历美方审查、量产拖延（媒体报道），就是这一层的例证。
-- 训练侧才是管制的主战场，而训练算力决定的是**模型迭代速度**：Tesla 的 Cortex、xAI 的 Colossus 都是十万卡级集群，中国厂商的训练资源受 HBM 与先进 GPU 供给约束——这条线的影响不在单车上，在版本节奏上（见 [[technology/consumer-adas|乘用车智驾篇]]的「一夜推送」现象）。
+- 训练侧才是管制的主战场，而训练算力决定的是**模型迭代速度**：Tesla 的 Cortex、xAI 的 Colossus 都是十万卡级集群，中国厂商的训练资源受 HBM 与先进 GPU 供给约束——这条线的影响不在单车上，在版本节奏上（见 [[market/consumer-adas|乘用车智驾篇]]的「一夜推送」现象）。
 
 ## 怎么读一颗芯片
 
@@ -57,5 +59,5 @@ tags:
 
 ## 相关笔记
 
-- [[technology/consumer-adas|乘用车智驾：卖给车主的辅助驾驶]] · [[technology/stack|一套自动驾驶系统由什么组成]]
-- [[companies/tesla|Tesla 与 FSD]] · [[technology/routes|技术路线之争]] · [[timeline|时间线总览]]
+- [[market/consumer-adas|乘用车智驾：卖给车主的辅助驾驶]] · [[technology/stack|一套自动驾驶系统由什么组成]]
+- [[companies/tesla|Tesla 与 FSD]] · [[technology/routes|技术路线之争]] · [[history/timeline|时间线总览]]

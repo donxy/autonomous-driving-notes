@@ -4,6 +4,8 @@ description: 三届 DARPA 挑战赛的赛制、结果与遗产——现代自动
 tags:
   - 历史
   - DARPA
+order: 2
+asof: 2026-11-11
 ---
 
 
@@ -52,4 +54,4 @@ DARPA（美国国防高级研究计划局）用三届公开竞赛，把「无人
 ## 相关笔记
 
 - [[history/google-to-waymo|从 Google 项目到 Waymo]]
-- [[timeline|时间线总览]]
+- [[history/timeline|时间线总览]]

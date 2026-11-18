@@ -4,6 +4,10 @@ description: 一辆无人车到底多少钱、武汉 5 元一单的争议、消�
 tags:
   - 技术
   - 商业模式
+order: 1
+asof: 2026-11-11
+aliases:
+  - technology/business-model
 ---
 
 
@@ -76,4 +80,4 @@ Robotaxi 省下的是司机，但司机的一部分工作与成本只是换了�
 ## 相关笔记
 
 - [[companies/cruise|Cruise：从估值顶点到关停]] · [[companies/pony-ai|小马智行]] · [[companies/waymo|Waymo]]
-- [[china/robotaxi-china|中国 Robotaxi 格局]] · [[history/shakeout|行业洗牌：失败与退出者]] · [[timeline|时间线总览]]
+- [[market/robotaxi-china|中国 Robotaxi 格局]] · [[history/shakeout|行业洗牌：失败与退出者]] · [[history/timeline|时间线总览]]
