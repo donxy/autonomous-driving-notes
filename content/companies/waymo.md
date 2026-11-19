@@ -55,7 +55,7 @@ Alphabet 2026-10-28 口径：凤凰城、旧金山湾区、洛杉矶、圣迭戈
 - **Lyft**：纳什维尔 2026-04 先经 Waymo App 开通，2026-09-09 Lyft App 正式接入——首个双 App 共用一支车队的市场。来源：[Lyft 官方博客（2026-09-09）](https://www.lyft.com/hub/posts/waymo-rides-are-on-lyft-in-nashville)
 - **Moove**：2024-12 起负责凤凰城等地车队运营（设施、充电、运维），后扩展至迈阿密与伦敦。
 
-## 安全数据（公司发布口径）
+## 安全数据【公司口径：Waymo】
 
 - Waymo Safety Impact Hub（数据截至 2026 年 6 月）：2.713 亿无人载客英里；与同里程人类基准相比，重伤及以上事故 −95%、致伤事故 −82%、行人致伤事故 −93%。方法基于 NHTSA 数据与调整后人类基准。来源：[Waymo Safety Impact Hub](https://waymo.com/safety/impact/)
 - 合作研究（Waymo 参与）：Swiss Re 与 Waymo 合作研究（Heliyon 2024）显示其样本内财产损失索赔 −76%、人身伤害索赔观察到 0 件；2024 年 12 月后续研究（2,530 万英里）为财产索赔 −88%、人身伤害索赔 −92%。

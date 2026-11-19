@@ -23,12 +23,12 @@ aliases:
 - 注：「2025Q4 单季全无人 340 万单」出自百度 Q4 2025 财报原文（2026-02-26）：「delivered 3.4 million fully driverless operational rides」。来源：[百度 Q4 2025 财报（SEC 备案）](https://www.sec.gov/Archives/edgar/data/1329099/000119312526076505/d117608dex991.htm)
 
 **武汉 2024：规模化与争议**
-- 2024-05-15 百度宣布第六代车在武汉投用、年内完成千台部署（此为**计划口径**）；武汉市交通运输局 2024 年 7 月澄清实际投放 400 多辆、非网传 1,000 辆；同期有拥堵投诉与网约车司机生计讨论。来源：[财联社](https://www.cls.cn/detail/1691088)
+- 2024-05-15 百度宣布第六代车在武汉投用、年内完成千台部署【公司口径：目标】；武汉市交通运输局 2024 年 7 月澄清实际投放 400 多辆、非网传 1,000 辆；同期有拥堵投诉与网约车司机生计讨论。来源：[财联社](https://www.cls.cn/detail/1691088)
 
 **出海（逐项，核实程度不一）**
 - **香港**【已核实】：2024 年 11 月获香港首张自动驾驶车辆先导牌照（10 辆，北大屿山），2024 年 12 月开始路测；此后多次扩区至机场岛、东涌、港岛南区数码港、九龙东；2026 年 2 月批准机场岛—东涌—欣澳跨区。来源：[香港运输署官方页](https://www.td.gov.hk/sc/public_services/taoav/index.html)
-- **迪拜**（已核实）：2025 年 3 月与 RTA 签合作，7 月获迪拜首张自动驾驶测试牌照，50 辆 RT6 自 2025 年 8 月公开道路测试；2026 年 1 月获迪拜首张全无人（无安全员）测试许可（已核 RTA 与百度官方稿）；「2028 年扩至 1,000+ 辆」属计划口径。来源：[百度官方稿（PR Newswire，2026-01-07）](https://www.prnewswire.com/news-releases/baidus-apollo-go-secures-dubais-first-fully-driverless-testing-permit-launches-local-operations-hub-302654927.html)
-- **瑞士**（合作方官方已核实）：与 PostBus 合作品牌 AmiGo，2025 年 12 月起带安全员测试；2026-06 获 FEDRO 特别许可，在东瑞士约 80 km² 开始 hands-free 测试（车内仍有安全员）。来源：[PostBus 官方（2026-06-12）](https://www.postauto.ch/en/about-us-and-news/news/2026/milestone-for-autonomous-mobility-in-switzerland)
+- **迪拜**【已核实】：2025 年 3 月与 RTA 签合作，7 月获迪拜首张自动驾驶测试牌照，50 辆 RT6 自 2025 年 8 月公开道路测试；2026 年 1 月获迪拜首张全无人（无安全员）测试许可（已核 RTA 与百度官方稿）；「2028 年扩至 1,000+ 辆」属计划口径。来源：[百度官方稿（PR Newswire，2026-01-07）](https://www.prnewswire.com/news-releases/baidus-apollo-go-secures-dubais-first-fully-driverless-testing-permit-launches-local-operations-hub-302654927.html)
+- **瑞士**【已核实：合作方官方】：与 PostBus 合作品牌 AmiGo，2025 年 12 月起带安全员测试；2026-06 获 FEDRO 特别许可，在东瑞士约 80 km² 开始 hands-free 测试（车内仍有安全员）。来源：[PostBus 官方（2026-06-12）](https://www.postauto.ch/en/about-us-and-news/news/2026/milestone-for-autonomous-mobility-in-switzerland)
 - **平台合作**（公司公告）：2025 年 7 月与 Uber 宣布多年合作（美国与中国大陆以外，先亚洲、中东）；8 月与 Lyft 宣布合作（先德国、英国）。
 
 ## 小马智行（Pony.ai）
@@ -45,13 +45,13 @@ aliases:
 
 ![文远知行 Mini Robobus](https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/WeRide_Mini_Robobus_in_Guangzhou_International_Biotech_Island_20230124-B.jpg/1280px-WeRide_Mini_Robobus_in_Guangzhou_International_Biotech_Island_20230124-B.jpg)
 *文远知行的 Mini Robobus 在广州国际生物岛运营（2023 年 1 月）。接驳巴士是中国 L4 落地最早成规模的场景之一。图：Tim Wu，[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0)，经 [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:WeRide_Mini_Robobus_in_Guangzhou_International_Biotech_Island_20230124-B.jpg)。*
-- 海外牌照（公司口径 + 财报稿）：截至 2025-12 公司称在 8 国持有自动驾驶牌照；2025 年 10 月获阿布扎比城市级 L4 商业许可（在 Uber 平台启动无人运营）；2025 年 11 月获瑞士联邦道路局无人驾驶许可。来源：[WeRide Q3 2025 财报稿](https://www.weride.ai/posts/pkyhny0xce1znch6nsue8w2j)
-- 新加坡（合作方官方已核实）：2025-09 Grab 宣布与文远推出 Ai.R 接驳服务，被 LTA 选定为榜鹅首个住宅区自动驾驶接驳服务，预计 2026 年初载客。来源：[Grab 官方](https://www.grab.com/sg/press/others/grab-in-partnership-with-weride-unveils-ai-r-autonomous-service-for-punggol/)
+- 海外牌照【公司口径：文远知行】：截至 2025-12 公司称在 8 国持有自动驾驶牌照；2025 年 10 月获阿布扎比城市级 L4 商业许可（在 Uber 平台启动无人运营）；2025 年 11 月获瑞士联邦道路局无人驾驶许可。来源：[WeRide Q3 2025 财报稿](https://www.weride.ai/posts/pkyhny0xce1znch6nsue8w2j)
+- 新加坡【已核实：合作方官方】：2025-09 Grab 宣布与文远推出 Ai.R 接驳服务，被 LTA 选定为榜鹅首个住宅区自动驾驶接驳服务，预计 2026 年初载客。来源：[Grab 官方](https://www.grab.com/sg/press/others/grab-in-partnership-with-weride-unveils-ai-r-autonomous-service-for-punggol/)
 - 规模【公司口径】：2026 年中报（截至 2026-07-31）称全球 L4 车队约 3,400 辆（Robotaxi 1,800+）。来源：[港交所公告](https://www.hkexnews.hk/listedco/listconews/sehk/2026/0812/2026081201281.pdf)
 
 ## 其他玩家：两条不同的路
 
-- **滴滴自动驾驶**：与广汽埃安 50/50 合资（2024 年 4 月获营业执照）；首款前装量产 L4 车型 2025-04 发布（10 颗激光雷达），计划 2026 年在广州/北京部分区域以混合派单接入滴滴出行（后段为计划口径）。
+- **滴滴自动驾驶**：与广汽埃安 50/50 合资（2024 年 4 月获营业执照）；首款前装量产 L4 车型 2025-04 发布（10 颗激光雷达），计划 2026 年在广州/北京部分区域以混合派单接入滴滴出行【公司口径：目标】。
 - **Momenta**：不做运营，做量产辅助驾驶供应商——截至 2025 年末累计定点 170 款、其中 68 款已量产（招股书口径）；坊间「量产超 160 款」系把定点数误作量产数；技术路线见 [[technology/stack|技术栈速览]]。
 - **华为乾崑智驾**：ADS 4 于 2025-04-22 发布（含高速 L3 商用方案），2025 年 9 月起规模推送；ADS 5 于 2026-04-23 发布。注意「L3 商用方案」是产品口径，与监管准入是两回事（见 [[regulation/levels-and-rules|分级与监管]] 的中国 L3 部分）。来源：[华为官网](https://auto.huawei.com/cn/news/2025/huawei-qiankun-intelligent-technology-launch/)
 - **车企城区领航**：汽车公社自编统计称 2025 年城市 NOA 全年上险量 267.0 万辆、渗透率 11.6%（不含特斯拉 FSD；与中汽协报告的 2025 年 1–11 月 312.9 万辆 / 15.1% 口径不同、不可并列比较，见 [[market/consumer-adas|乘用车智驾篇]]）。各家路线分化（小鹏纯视觉 + VLA、蔚来世界模型等）细节来自行业汇总，未逐项核车企官方稿，本页只记分化这一事实，路线细节见 [[technology/routes|路线之争]]。
