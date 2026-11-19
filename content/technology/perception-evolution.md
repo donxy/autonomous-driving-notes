@@ -26,14 +26,14 @@ badge: new
 
 转折点是把所有传感器先融进同一张俯视网格（BEV 特征图），检测、地图、预测都从同一张张量上解码：
 
-- **Lift-Splat-Shoot**（NVIDIA/多伦多大学，ECCV 2020）：把图像「抬升」成视锥再「拍扁」进 BEV 网格，为后续规划消费——BEV 融合的公开起点。
-- **Tesla AI Day（2021-08）**：8 路摄像头经 Transformer 输出三维「vector space」。注意用词：**Tesla 从没用过 "BEV" 这个词**，「BEV+Transformer」是后人的技术转述；「Tesla 首创 BEV」的说法也无从谈起——LSS 的公开时间在先。
+- **Lift-Splat-Shoot**（NVIDIA/多伦多大学，ECCV 2020）：把图像「抬升」成视锥再「拍扁」进 BEV 网格，为后续规划消费——以「显式深度分布提升」构建相机 BEV 的公开起点（BEV 特征表征本身更早：OFT（2018/2019）已把单目图像特征映射到正射鸟瞰空间做 3D 检测，且不用显式深度分布）。
+- **Tesla AI Day（2021-08）**：8 路摄像头经 Transformer 输出三维「vector space」。注意用词：Tesla 未发表 BEV 论文、量产方案也不以 BEV 命名，「BEV+Transformer」是后人的技术转述；但 Karpathy 在 2020 年 2 月的 ScaledML 演讲中已公开描述其「鸟瞰空间网络预测」路线（多相机特征在网络内融合、直接输出俯视空间预测），早于 LSS 的公开（2020-08）——「Tesla 首创 BEV」无从谈起，「Tesla 从没用过 BEV 概念」同样不成立。
 - **BEVDet**（2021-12）：把 LSS 式范式做成检测框架——只有 arXiv 预印本、无会议 venue，引用时按预印本处理。
 - **BEVFormer**（上海 AI Lab 等，ECCV 2022）：BEV 查询网格 + 空间交叉注意力 + **时序自注意力**，时序融合显著改善速度估计与低能见度召回。
 
 BEV 为什么赢：单一的度量坐标系装下所有传感器与任务；时序融合变成对网格做自车运动对齐；尺度在网格里天然守恒。但要分清它解决了什么——**BEV 解决的是融合问题，不是未知障碍问题**：特征里有障碍物，检测头没解码成目标，规划照样看不见。
 
-来源：[LSS（arXiv:2008.05711）](https://arxiv.org/abs/2008.05711)；[BEVFormer（arXiv:2203.17270）](https://arxiv.org/abs/2203.17270)；[BEVDet（arXiv:2112.11790）](https://arxiv.org/abs/2112.11790)
+来源：[LSS（arXiv:2008.05711）](https://arxiv.org/abs/2008.05711)；[OFT（arXiv:1811.08188）](https://arxiv.org/abs/1811.08188)；[Karpathy ScaledML 演讲（2020-02，官方视频）](https://www.youtube.com/watch?v=hx7BXih7zx8)；[BEVFormer（arXiv:2203.17270）](https://arxiv.org/abs/2203.17270)；[BEVDet（arXiv:2112.11790）](https://arxiv.org/abs/2112.11790)
 
 ## 第三代：占用网络——不问它是什么，只问它占没占
 
