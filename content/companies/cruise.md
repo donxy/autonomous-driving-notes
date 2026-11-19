@@ -4,6 +4,8 @@ description: Cruise 的完整兴衰线——GM 收购、资本涌入、加州首
 tags:
   - 公司
   - Cruise
+order: 3
+asof: 2026-11-11
 ---
 
 
@@ -72,5 +74,5 @@ tags:
 
 ## 相关笔记
 
-- [[history/shakeout|行业洗牌：失败与退出者]] · [[technology/business-model|Robotaxi 的成本与商业模式]]
-- [[companies/waymo|Waymo]] · [[technology/safety-evidence|安全数据怎么读]] · [[timeline|时间线总览]]
+- [[history/shakeout|行业洗牌：失败与退出者]] · [[market/business-model|Robotaxi 的成本与商业模式]]
+- [[companies/waymo|Waymo]] · [[regulation/safety-evidence|安全数据怎么读]] · [[history/timeline|时间线总览]]

@@ -1,0 +1,38 @@
+footer.site-footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 1.6rem;
+  margin: 2rem 0 3rem;
+  padding-top: 1.4rem;
+  border-top: 1px solid var(--rule);
+  font-size: 14px;
+  color: var(--gray);
+  opacity: 1;
+
+  .site-footer-name {
+    font-family: var(--headerFont);
+    font-weight: 700;
+    color: var(--dark);
+  }
+
+  ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 1.4rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    margin: 0;
+  }
+
+  a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    font-weight: 400;
+  }
+}

@@ -1,0 +1,239 @@
+@use "../../styles/variables.scss" as *;
+
+.line-folder {
+  .lf-head {
+    margin-top: 0.4rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem 2rem;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-bottom: 1.6rem;
+    border-bottom: 2px solid var(--dark);
+  }
+
+  .lf-lead {
+    flex: 1 1 22rem;
+    max-width: 40rem;
+
+    p {
+      margin: 0;
+      font-size: 18px;
+      line-height: 1.8;
+      color: var(--darkgray);
+    }
+  }
+
+  .lf-stats {
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+
+    div {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+
+    dd {
+      margin: 0;
+      font-size: 32px;
+      line-height: 1.1;
+      color: var(--secondary);
+    }
+
+    dt {
+      font-size: 13px;
+      color: var(--gray);
+    }
+
+    .is-new dd {
+      color: var(--tertiary);
+    }
+  }
+
+  .lf-steps {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .lf-step {
+    display: grid;
+    grid-template-columns: 48px minmax(0, 1fr);
+    gap: 1.25rem;
+    position: relative;
+    margin: 0;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 23px;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background: var(--rule);
+    }
+
+    &:first-child::before {
+      top: 2.6rem;
+    }
+
+    &:last-child::before {
+      bottom: calc(100% - 2.6rem);
+    }
+  }
+
+  .lf-badge {
+    position: relative;
+    z-index: 1;
+    width: 40px;
+    height: 40px;
+    margin: 1.55rem 0 0 4px;
+    border-radius: 999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    background: var(--card);
+    color: var(--secondary);
+    border: 2px solid var(--secondary);
+    box-sizing: border-box;
+  }
+
+  .lf-entry .lf-badge {
+    background: var(--secondary);
+    color: var(--light);
+  }
+
+  .lf-new .lf-badge,
+  .lf-step.lf-new .lf-badge {
+    background: var(--tertiary);
+    border-color: var(--tertiary);
+    color: var(--light);
+  }
+
+  .lf-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    margin-top: 1rem;
+    padding: 1.3rem 1.6rem;
+    border-radius: 14px;
+    border: 1px solid var(--rule);
+    background: var(--card);
+    color: var(--dark);
+    font-weight: 400;
+    text-decoration: none;
+    transition: border-color 0.15s ease;
+
+    &:hover {
+      border-color: var(--secondary);
+    }
+  }
+
+  .lf-title-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.6rem;
+  }
+
+  .lf-title {
+    font-family: var(--headerFont);
+    font-size: 22px;
+    font-weight: 700;
+  }
+
+  span.lf-new {
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--light);
+    background: var(--tertiary);
+    border-radius: 999px;
+    padding: 4px 8px;
+  }
+
+  .lf-min {
+    margin-left: auto;
+    font-size: 13px;
+    color: var(--gray);
+  }
+
+  .lf-desc {
+    font-size: 15px;
+    line-height: 1.75;
+    color: var(--darkgray);
+
+    b {
+      color: var(--dark);
+    }
+  }
+
+  .lf-next {
+    margin-top: 2.5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    gap: 1rem;
+  }
+
+  .lf-next-card {
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    padding: 1.2rem 1.5rem;
+    border: 1px solid var(--rule);
+    border-radius: 14px;
+    background: var(--card);
+    color: var(--dark);
+    text-decoration: none;
+
+    &:hover {
+      border-color: var(--secondary);
+    }
+  }
+
+  .lf-next-kicker {
+    font-size: 13px;
+    color: var(--gray);
+  }
+
+  .lf-next-name {
+    font-family: var(--headerFont);
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .lf-next-desc {
+    font-size: 14px;
+    color: var(--darkgray);
+  }
+}
+
+@media all and ($mobile) {
+  .line-folder {
+    .lf-step {
+      grid-template-columns: 36px minmax(0, 1fr);
+      gap: 0.75rem;
+
+      &::before {
+        left: 17px;
+      }
+    }
+
+    .lf-badge {
+      width: 32px;
+      height: 32px;
+      margin-left: 2px;
+      font-size: 13px;
+    }
+
+    .lf-card {
+      padding: 1rem 1.1rem;
+    }
+
+    .lf-title {
+      font-size: 19px;
+    }
+  }
+}

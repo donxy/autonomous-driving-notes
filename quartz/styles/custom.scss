@@ -3,10 +3,11 @@
 // ===== 无人驾驶技能树（原名「自动驾驶 · 前世今生」，2026-11-17 改名）—— 视觉升级（2026-11-11）=====
 // 字体：系统栈，标题衬线（编辑感）、正文无衬线；不加载任何网络字体。
 :root {
-  --headerFont: "Noto Serif SC", "Songti SC", "STSong", "SimSun", serif;
-  --bodyFont: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB",
-    "Microsoft YaHei", "Noto Sans SC", "Source Han Sans SC", sans-serif;
-  --codeFont: ui-monospace, "SF Mono", SFMono-Regular, Menlo, Consolas, monospace;
+  --headerFont: "Noto Serif SC", "Source Han Serif SC", "Songti SC", "STSong", "SimSun", serif;
+  --bodyFont: "Noto Sans SC", "Source Han Sans SC", "PingFang SC", "Hiragino Sans GB",
+    "Microsoft YaHei", -apple-system, BlinkMacSystemFont, sans-serif;
+  --codeFont: "JetBrains Mono", "SF Mono", SFMono-Regular, Menlo, Consolas, "Liberation Mono",
+    monospace;
 }
 
 // 正文阅读感：行高与字距为中文长文调校
@@ -19,11 +20,9 @@ article {
     line-height: 1.78;
   }
 
-  // 章节标题：小号章节感 —— 左侧 accent 竖线 + 充足留白
+  // 章节标题：衬线 + 充足留白（2026-11-17 起去掉左侧竖线）
   h2 {
-    margin-top: 2.4rem;
-    padding-left: 0.6rem;
-    border-left: 4px solid var(--tertiary);
+    margin-top: 2.75rem;
     line-height: 1.35;
   }
 
@@ -39,7 +38,9 @@ article {
     border-collapse: collapse;
 
     th {
-      background-color: var(--highlight);
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--gray);
       text-align: left;
       white-space: nowrap;
     }
@@ -54,12 +55,11 @@ article {
     }
   }
 
-  // 引用块（口径说明等）：淡底 + accent 边
-  blockquote {
-    border-left: 3px solid var(--secondary);
-    background-color: var(--highlight);
-    border-radius: 0 8px 8px 0;
-    padding: 0.6rem 1rem;
+  // 普通引用块（非 callout）
+  blockquote:not(.callout) {
+    border-left: 3px solid var(--rule);
+    padding: 0.2rem 1rem;
+    color: var(--darkgray);
   }
 
   img {
@@ -96,163 +96,6 @@ article {
 footer {
   opacity: 0.9;
   font-size: 0.9rem;
-}
-
-// ===== 首页专用（index.md 里的 HTML 块）=====
-.hero {
-  margin: 0.5rem 0 1.6rem;
-  padding: 1.6rem 1.5rem 1.3rem;
-  border: 1px solid var(--lightgray);
-  border-radius: 14px;
-  // 平底：不用渐变（径向渐变曾把 kicker 对比度压到 3.8:1 已去掉；线性渐变一并去除，保持克制）
-  background-color: color-mix(in srgb, var(--lightgray) 18%, transparent);
-}
-
-.hero-kicker {
-  font-size: 0.8rem;
-  letter-spacing: 0.28em;
-  color: var(--tertiary);
-  font-weight: 700;
-  margin-bottom: 0.5rem;
-}
-
-.hero-title {
-  font-family: var(--headerFont);
-  font-size: 1.9rem;
-  line-height: 1.3;
-  margin: 0 0 0.6rem;
-  color: var(--dark);
-}
-
-.hero-sub {
-  margin: 0 0 0.9rem;
-  color: var(--darkgray);
-  max-width: 34rem;
-}
-
-.hero-chips {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.45rem;
-}
-
-.hero-chips span {
-  font-size: 0.78rem;
-  padding: 0.18rem 0.6rem;
-  border: 1px solid var(--lightgray);
-  border-radius: 999px;
-  background-color: color-mix(in srgb, var(--light) 72%, transparent);
-  color: var(--darkgray);
-}
-
-// 卡片网格（三个坐标 / 笔记地图）
-.card-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
-  gap: 0.8rem;
-  margin: 1rem 0 1.4rem;
-}
-
-.note-card {
-  position: relative;
-  border: 1px solid var(--lightgray);
-  border-radius: 12px;
-  padding: 0.95rem 1.05rem;
-  background-color: color-mix(in srgb, var(--lightgray) 16%, transparent);
-  transition:
-    border-color 0.15s ease,
-    transform 0.15s ease;
-
-  &:hover {
-    border-color: var(--tertiary);
-    transform: translateY(-2px);
-  }
-
-  .card-kicker {
-    font-size: 0.78rem;
-    letter-spacing: 0.18em;
-    color: var(--tertiary);
-    font-weight: 700;
-    margin-bottom: 0.35rem;
-  }
-
-  // 单目标卡：主链接的点击区扩展到整卡（多链接卡不使用此类）
-  a.card-link::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    border-radius: 12px;
-  }
-
-  a:focus-visible {
-    outline: 2px solid var(--secondary);
-    outline-offset: 2px;
-  }
-
-  // 坐标卡：大数字 + 出处行
-  .stat-num {
-    font-family: var(--headerFont);
-    font-size: 1.8rem;
-    font-weight: 700;
-    line-height: 1.2;
-    color: var(--secondary);
-    margin: 0.15rem 0 0.3rem;
-  }
-
-  .stat-label {
-    font-size: 0.92rem;
-    font-weight: 600;
-    color: var(--dark);
-    margin-bottom: 0.3rem;
-  }
-
-  .card-meta {
-    font-size: 0.8rem;
-    line-height: 1.55;
-    color: var(--gray);
-    margin: 0.55rem 0 0;
-    // 盖在整卡点击层之上：出处链接必须保持可点（单目标卡的覆盖层不得吞掉它）
-    position: relative;
-    z-index: 2;
-  }
-
-  .card-title {
-    font-family: var(--headerFont);
-    font-size: 1.05rem;
-    font-weight: 700;
-    margin-bottom: 0.35rem;
-
-    a {
-      color: var(--dark);
-      text-decoration: none;
-      background: none;
-      padding: 0;
-    }
-  }
-
-  .card-desc {
-    font-size: 0.86rem;
-    color: var(--darkgray);
-    line-height: 1.6;
-    margin: 0;
-  }
-
-  .card-links {
-    font-size: 0.84rem;
-    margin: 0.45rem 0 0;
-    line-height: 1.9;
-  }
-}
-
-// 移动端：hero 标题收紧
-@media (max-width: 600px) {
-  .hero {
-    padding: 1.15rem 1rem 1rem;
-  }
-
-  .hero-title {
-    font-size: 1.5rem;
-  }
 }
 
 // ===== UI/UX 审计修复（2026-11-11 第二轮）=====
@@ -342,41 +185,6 @@ article img {
   }
 }
 
-// --- Hero 行动区：主入口（时间线）+ 次入口（笔记地图）---
-.hero-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.6rem;
-  margin-top: 1rem;
-}
-
-.btn {
-  display: inline-block;
-  padding: 0.52rem 1.1rem;
-  border-radius: 999px;
-  border: 1px solid var(--secondary);
-  font-size: 0.95rem;
-  font-weight: 600;
-  text-decoration: none;
-  background: none;
-
-  &.btn-primary {
-    background-color: var(--secondary);
-    color: var(--light);
-  }
-
-  &.btn-ghost {
-    color: var(--secondary);
-    background-color: transparent;
-  }
-
-  &:focus-visible {
-    outline: 2px solid var(--secondary);
-    outline-offset: 2px;
-  }
-}
-
-// （卡片样式已统一收敛到上方 .note-card 单一定义；全站索引改用可折叠 callout，不再需要 .index-wikilinks）
 
 // ===== taste-skill 审阅第一类修复（2026-11-11）=====
 // 全局键盘焦点轮廓（Quartz 的 .clipboard-button:focus 只删轮廓不补替代，一并覆盖）
@@ -424,5 +232,191 @@ article img {
     display: inline-flex;
     align-items: center;
     min-height: 44px;
+  }
+}
+
+
+// ===== 界面升级（2026-11-17）· 阶段 1：设计令牌 =====
+:root {
+  --card: #fffdf9;
+  --rule: #e1dacd;
+  --teal-soft: #dcebea;
+  --paper-2: #efebe3;
+}
+
+:root[saved-theme="dark"] {
+  --card: #1d2026;
+  --rule: #2a2e35;
+  --teal-soft: #23343a;
+  --paper-2: #191c21;
+}
+
+.mono {
+  font-family: var(--codeFont);
+  font-variant-numeric: tabular-nums;
+}
+
+article {
+  p,
+  li {
+    font-size: 17px;
+    line-height: 1.9;
+  }
+}
+
+@media (max-width: 800px) {
+  article {
+    p,
+    li {
+      font-size: 16px;
+      line-height: 1.85;
+    }
+  }
+}
+
+// ===== 阶段 2：证据标签 =====
+.ev {
+  display: inline-flex;
+  align-items: center;
+  font-family: var(--bodyFont);
+  font-size: 12px;
+  line-height: 1;
+  font-weight: 500;
+  letter-spacing: 0;
+  padding: 4px 7px;
+  border-radius: 999px;
+  white-space: nowrap;
+  vertical-align: 2px;
+  margin: 0 2px;
+  border: 1px solid transparent;
+}
+
+.ev-ok {
+  background: #175e63;
+  color: #ffffff;
+}
+
+.ev-co {
+  background: #f6e6d6;
+  color: #7a3f12;
+  border-color: #e3bb94;
+}
+
+.ev-md {
+  background: transparent;
+  color: #453f36;
+  border: 1px dashed #8a8273;
+}
+
+.ev-un {
+  background: repeating-linear-gradient(135deg, #ece7dd 0 4px, #f7f5f0 4px 8px);
+  color: #5f584d;
+  border: 1px dotted #8a8273;
+}
+
+:root[saved-theme="dark"] {
+  .ev-ok {
+    background: #7fb5ba;
+    color: #0e1a1b;
+  }
+
+  .ev-co {
+    background: #3a2a1c;
+    color: #f0c79a;
+    border-color: #6b4a2b;
+  }
+
+  .ev-md {
+    color: #d6d2c9;
+    border-color: #8a8f97;
+  }
+
+  .ev-un {
+    background: repeating-linear-gradient(135deg, #262a31 0 4px, #1a1d22 4px 8px);
+    color: #c4bfb5;
+    border-color: #8a8f97;
+  }
+}
+
+// ===== 阶段 6：笔记页正文 =====
+// callout：统一卡片样式（本页口径 / 本页纪律 / 先说结论），不用左侧粗边框
+article .callout,
+article .callout[data-callout] {
+  --color: var(--secondary);
+  --border: var(--rule);
+  --bg: var(--card);
+  background: var(--card);
+  border: 1px solid var(--rule);
+  border-radius: 14px;
+  padding: 1rem 1.4rem;
+
+  .callout-title {
+    color: var(--secondary);
+    font-size: 13px;
+    letter-spacing: 0.06em;
+    gap: 0.4rem;
+  }
+
+  .callout-icon {
+    background-color: var(--secondary);
+  }
+
+  .callout-content > p,
+  .callout-content li {
+    font-size: 15px;
+    line-height: 1.8;
+  }
+}
+
+// 注意：Quartz 把 [!summary] / [!tldr] 渲染成 data-callout="abstract"
+article .callout[data-callout="summary"],
+article .callout[data-callout="abstract"] {
+  --color: var(--tertiary);
+  padding: 1.2rem 1.5rem;
+
+  .callout-title {
+    color: var(--tertiary);
+  }
+
+  .callout-icon {
+    display: none;
+  }
+
+  .callout-content li {
+    font-size: 16px;
+    line-height: 1.75;
+  }
+}
+
+// 表格：卡片容器；手机上横向滚动，右缘渐隐提示可滑动
+article .table-container {
+  border: 1px solid var(--rule);
+  border-radius: 12px;
+  background:
+    linear-gradient(to left, var(--card) 30%, transparent) right center / 32px 100% no-repeat local,
+    linear-gradient(to left, rgba(0, 0, 0, 0.12), transparent) right center / 14px 100% no-repeat scroll,
+    var(--card);
+
+  table {
+    margin: 0;
+  }
+
+  td,
+  th {
+    padding: 0.6rem 0.9rem;
+  }
+}
+
+// 搜索与站名已移入顶栏；桌面端侧栏不再需要顶部大留白
+@media all and (min-width: 800px) {
+  .page > #quartz-body .sidebar.left,
+  .page > #quartz-body .sidebar.right {
+    padding-top: 3rem;
+  }
+}
+
+@media all and (max-width: 800px) {
+  .page > #quartz-body .sidebar.left {
+    padding-top: 0.5rem;
   }
 }

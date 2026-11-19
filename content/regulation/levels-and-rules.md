@@ -4,6 +4,8 @@ description: SAE J3016 与中国国标的分级定义、L3 的真实落地方式
 tags:
   - 监管
   - 分级
+order: 2
+asof: 2026-11-11
 ---
 
 
@@ -57,7 +59,7 @@ tags:
 - **欧盟 (EU) 2022/1426**：在框架法规下为完全自动驾驶车辆（L4 型）的 ADS 制定统一型式批准程序，现阶段仅适用于小批量车辆。
 
 **中国：试点准入路线**
-- 总框架是 2023 年四部门准入和上路通行试点通知，路径为「申报遴选 → 产品准入 → 指定主体上路试点」，与地方运营许可、地方条例（如北京 2025 年施行的《自动驾驶汽车条例》）叠合。细节见 [[china/robotaxi-china|中国 Robotaxi 格局]] 的政策部分。
+- 总框架是 2023 年四部门准入和上路通行试点通知，路径为「申报遴选 → 产品准入 → 指定主体上路试点」，与地方运营许可、地方条例（如北京 2025 年施行的《自动驾驶汽车条例》）叠合。细节见 [[market/robotaxi-china|中国 Robotaxi 格局]] 的政策部分。
 
 ## 责任：分级本身就是责任分配表
 
@@ -68,5 +70,5 @@ tags:
 
 ## 相关笔记
 
-- [[companies/tesla|Tesla]] · [[china/robotaxi-china|中国 Robotaxi 格局]]
-- [[regulation/us-eu-rules|美国与欧盟的监管]] · [[technology/consumer-adas|乘用车智驾：卖给车主的辅助驾驶]] · [[timeline|时间线总览]]
+- [[companies/tesla|Tesla]] · [[market/robotaxi-china|中国 Robotaxi 格局]]
+- [[regulation/us-eu-rules|美国与欧盟的监管]] · [[market/consumer-adas|乘用车智驾：卖给车主的辅助驾驶]] · [[history/timeline|时间线总览]]

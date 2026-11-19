@@ -4,6 +4,10 @@ description: 一辆无人车到底多少钱、武汉 5 元一单的争议、消�
 tags:
   - 技术
   - 商业模式
+order: 1
+asof: 2026-11-11
+aliases:
+  - technology/business-model
 ---
 
 
@@ -15,7 +19,7 @@ tags:
 - **百度 Apollo RT6（量产名颐驰 06）**：2024 年 5 月 Apollo Day 公布售价 **20.46 万元**，首批 1,000 台交付萝卜快跑，支持约 3 分钟自动换电。这是目前唯一由运营商正式公布价格的量产 robotaxi 车型。百度称其整车成本较第五代下降约 60%（五代「约 48 万元」是媒体与分析师沿用的数字，百度官方只给相对降幅）。
 - **小马智行 Gen-7**：公司称自动驾驶套件 BOM 成本较上一代降低 70%（计算单元降 80%），但从不给绝对值；个别自媒体流传的「套件 5,000–10,000 美元」无公司出处，本页不采。公司另给出前瞻目标：2027 年款整车总成本降至 23 万元以下（公司口径，北京车展 2026 表态）。
 - **Waymo**：从未公布单车成本。媒体/分析师对 I-PACE 车队的主流估算约 **15 万美元/台**（基础车约 7 万 + 硬件约 3 万 + 改装约 5 万，全是估算）；第六代改用极氪底盘后，整车成本估算区间在 7 万–12.5 万美元之间，不同来源差异很大。
-- **Cruise Origin**：2020 年发布时 GM 称其制造成本约为一辆电动 SUV 的一半（公司口径）；实际成本从未披露，2024 年该车型搁置时 GM 计提约 5.83 亿美元减值。
+- **Cruise Origin**：2020 年发布时 GM 称其制造成本约为一辆电动 SUV 的一半【公司口径】；实际成本从未披露，2024 年该车型搁置时 GM 计提约 5.83 亿美元减值。
 - 读法：中美单车成本差一个数量级的说法（20 万元 vs 15 万美元）方向大致成立，但两边的构成（是否含改装、保险、备件）从不对齐，只能当量级参考。
 
 来源：[新浪财经：Apollo Day 2024 与 RT6 售价](https://finance.sina.cn/2024-05-15/detail-inavhvsu2836907.d.html)；[Waymo 成本估算拆解](https://www.understandingrobots.org/p/how-waymo-plans-to-grow-its-fleet)
@@ -76,4 +80,4 @@ Robotaxi 省下的是司机，但司机的一部分工作与成本只是换了�
 ## 相关笔记
 
 - [[companies/cruise|Cruise：从估值顶点到关停]] · [[companies/pony-ai|小马智行]] · [[companies/waymo|Waymo]]
-- [[china/robotaxi-china|中国 Robotaxi 格局]] · [[history/shakeout|行业洗牌：失败与退出者]] · [[timeline|时间线总览]]
+- [[market/robotaxi-china|中国 Robotaxi 格局]] · [[history/shakeout|行业洗牌：失败与退出者]] · [[history/timeline|时间线总览]]

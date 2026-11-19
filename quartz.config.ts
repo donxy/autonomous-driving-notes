@@ -1,5 +1,6 @@
 import { QuartzConfig } from "./quartz/cfg"
 import * as Plugin from "./quartz/plugins"
+import * as Component from "./quartz/components"
 
 /**
  * Quartz 4 Configuration
@@ -29,7 +30,7 @@ const config: QuartzConfig = {
         lightMode: {
           light: "#f7f5f0",
           lightgray: "#e7e1d6",
-          gray: "#6e675b",
+          gray: "#5f584d",
           darkgray: "#453f36",
           dark: "#211d18",
           secondary: "#175e63",
@@ -40,7 +41,7 @@ const config: QuartzConfig = {
         darkMode: {
           light: "#14161a",
           lightgray: "#2a2e35",
-          gray: "#98a1ab",
+          gray: "#a39e94",
           darkgray: "#d6d2c9",
           dark: "#edeae3",
           secondary: "#7fb5ba",
@@ -66,6 +67,7 @@ const config: QuartzConfig = {
       }),
       Plugin.ObsidianFlavoredMarkdown({ enableInHtmlEmbed: false }),
       Plugin.GitHubFlavoredMarkdown(),
+      Plugin.Evidence(),
       Plugin.TableOfContents(),
       Plugin.CrawlLinks({ markdownLinkResolution: "shortest" }),
       Plugin.Description(),
@@ -76,7 +78,10 @@ const config: QuartzConfig = {
       Plugin.AliasRedirects(),
       Plugin.ComponentResources(),
       Plugin.ContentPage(),
-      Plugin.FolderPage(),
+      Plugin.FolderPage({
+        beforeBody: [Component.Breadcrumbs({ rootName: "首页" }), Component.ArticleTitle()],
+        pageBody: Component.LineFolder(),
+      }),
       Plugin.TagPage(),
       Plugin.ContentIndex({
         enableSiteMap: true,

@@ -4,6 +4,10 @@ description: RAND 的里程功效账、NHTSA 上报数据的正确用法、Swiss
 tags:
   - 技术
   - 安全
+order: 1
+asof: 2026-11-11
+aliases:
+  - technology/safety-evidence
 ---
 
 
@@ -87,4 +91,4 @@ tags:
 ## 相关笔记
 
 - [[companies/waymo|Waymo]] · [[companies/tesla|Tesla]] · [[companies/cruise|Cruise：从估值顶点到关停]]
-- [[regulation/levels-and-rules|自动驾驶分级与监管]] · [[history/shakeout|行业洗牌：失败与退出者]] · [[timeline|时间线总览]]
+- [[regulation/levels-and-rules|自动驾驶分级与监管]] · [[history/shakeout|行业洗牌：失败与退出者]] · [[history/timeline|时间线总览]]

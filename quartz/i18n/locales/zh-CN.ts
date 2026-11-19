@@ -22,7 +22,7 @@ export default {
       quote: "引用",
     },
     backlinks: {
-      title: "反向链接",
+      title: "引用了本页的笔记",
       noBacklinksFound: "无法找到反向链接",
     },
     themeToggle: {
@@ -50,8 +50,8 @@ export default {
       linkToOriginal: "指向原始笔记的链接",
     },
     search: {
-      title: "搜索",
-      searchBarPlaceholder: "搜索些什么",
+      title: "搜索笔记、公司、术语",
+      searchBarPlaceholder: "搜索笔记、公司、术语",
     },
     tableOfContents: {
       title: "目录",

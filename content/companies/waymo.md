@@ -4,17 +4,24 @@ description: Waymo 当下状态：订单规模、运营城市、国际扩张、�
 tags:
   - 公司
   - Waymo
+order: 1
+asof: 2026-11-11
 ---
 
 
 > [!info] 本页口径
 > 历史见 [[history/google-to-waymo|从 Google 项目到 Waymo]]，本页只写当下状态。官方披露与公司口径分开标注；安全数据均为公司发布口径。信息截至 2026-11-11。
 
+> [!summary] 先说结论
+> 1. 每周超过 50 万次全无人付费出行【公司口径】；「2026 年底达每周 100 万次」是目标，不是已达成数。
+> 2. 美国 15 个都会区在运营；国际部分目前全部是「宣布 + 测试」阶段。
+> 3. 累计全无人里程超过 3 亿英里（Alphabet 2026-10-28 Q3 财报）【公司口径】；安全数据同样只有公司发布口径。
+
 ## 规模：最新官方数字
 
 - **每周超过 50 万次全无人付费出行**——最新官方数字，Alphabet CEO Pichai 于 2026-04-29 Q1 2026 财报披露；此后 2026-10-28 的 Q3 财报未再更新周单量。里程碑序列：2024-10 约 10 万/周 → 2025-04 约 25 万/周 → 2026-02 约 40 万/周 → 2026-03 末 50 万+/周。
 - 「2026 年底达每周 100 万次」是联席 CEO 于 2026-02 给出的**目标**，不是已达成数。
-- 累计全无人里程 **超过 3 亿英里**（Alphabet 2026-10-28 Q3 财报披露）；2025 年全年完成约 1,500 万次出行、为 2024 年 3 倍，累计出行超 2,000 万次（公司口径）。
+- 累计全无人里程 **超过 3 亿英里**（Alphabet 2026-10-28 Q3 财报披露）；2025 年全年完成约 1,500 万次出行、为 2024 年 3 倍，累计出行超 2,000 万次【公司口径】。
 - 来源：[Alphabet Q1 2026 财报](https://cdn.prod.nntech.io/company-events/reports/4427659d-5ae5-31e6-a271-a19dad46a35e/report.pdf)；[Waymo 官方博客（2026-02-02）](https://waymo.com/blog/2026/02/waymo-raises-usd16-billion-investment-round/)
 
 ## 运营城市（美国 15 个都会区）
@@ -65,4 +72,4 @@ Alphabet 2026-10-28 口径：凤凰城、旧金山湾区、洛杉矶、圣迭戈
 
 - [[history/google-to-waymo|从 Google 项目到 Waymo]]
 - [[companies/tesla|Tesla]] · [[companies/cruise|Cruise：从估值顶点到关停]] · [[companies/pony-ai|小马智行]]
-- [[technology/safety-evidence|安全数据怎么读]] · [[technology/business-model|Robotaxi 的成本与商业模式]] · [[china/robotaxi-china|中国 Robotaxi 格局]]
+- [[regulation/safety-evidence|安全数据怎么读]] · [[market/business-model|Robotaxi 的成本与商业模式]] · [[market/robotaxi-china|中国 Robotaxi 格局]]

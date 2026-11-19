@@ -4,6 +4,8 @@ description: Uber ATG、Argo AI、Lyft Level 5、Motional 的退场与重组，�
 tags:
   - 历史
   - 行业
+order: 4
+asof: 2026-11-11
 ---
 
 
@@ -53,7 +55,7 @@ tags:
 
 ## 小结：失败模式清单
 
-1. **安全文化先于技术崩塌**：坦佩事故与 Cruise 事件里，压垮项目的都不是单次技术失效，而是失效之后的组织应对（监督失效、报告失真）。详见 [[companies/cruise|Cruise 篇]]与 [[technology/safety-evidence|安全数据怎么读]]。
+1. **安全文化先于技术崩塌**：坦佩事故与 Cruise 事件里，压垮项目的都不是单次技术失效，而是失效之后的组织应对（监督失效、报告失真）。详见 [[companies/cruise|Cruise 篇]]与 [[regulation/safety-evidence|安全数据怎么读]]。
 2. **烧钱速度超过东家耐心**：网约车公司（Uber、Lyft）在盈利压力下先砍 L4；车厂（福特）在减值 27 亿后转向 L2/L3。
 3. **双股东合资没有最终买单人**：Argo 融不到外部新钱即关停；Motional 一方撤资即触发重组——合资结构在顺风时分摊成本，在逆风时放大僵局。
 4. **时间表跳票消耗信任额度**：商业化一再推迟后，资本转向近期能变现的 L2/L3 与辅助驾驶。
@@ -62,4 +64,4 @@ tags:
 ## 相关笔记
 
 - [[companies/cruise|Cruise：从估值顶点到关停]] · [[history/google-to-waymo|从 Google 项目到 Waymo]]
-- [[technology/safety-evidence|安全数据怎么读]] · [[technology/business-model|Robotaxi 的成本与商业模式]] · [[technology/trucking|自动驾驶卡车：干线货运线]] · [[timeline|时间线总览]]
+- [[regulation/safety-evidence|安全数据怎么读]] · [[market/business-model|Robotaxi 的成本与商业模式]] · [[market/trucking|自动驾驶卡车：干线货运线]] · [[history/timeline|时间线总览]]
