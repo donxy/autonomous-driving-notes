@@ -5,14 +5,16 @@ import { resolveRelative, FullSlug } from "../../util/path"
 import { ComponentChildren } from "preact"
 import FolderContent from "./FolderContent"
 import { concatenateResources } from "../../util/resources"
-import { lineByFolder, notesOfLine, minutesOf, lineMinutes, isNew, cleanDesc } from "../lines"
+import { lineByFolder, lineName, notesOfLine, minutesOf, lineMinutes, isNew, cleanDesc } from "../lines"
+import { uiStrings } from "../../i18n/ui"
 import style from "../styles/lineFolder.scss"
 
 export default (() => {
   const Fallback = FolderContent()
 
   const LineFolder: QuartzComponent = (props: QuartzComponentProps) => {
-    const { tree, fileData, allFiles } = props
+    const { tree, fileData, allFiles, cfg } = props
+    const t = uiStrings(cfg.locale).lineFolder
     const folder = (fileData.slug ?? "").replace(/\/index$/, "")
     const line = lineByFolder(folder)
     if (!line) return <Fallback {...props} />
@@ -41,16 +43,16 @@ export default (() => {
           <article class="lf-lead">{lead}</article>
           <dl class="lf-stats">
             <div>
-              <dt>篇已发布</dt>
+              <dt>{t.publishedSuffix}</dt>
               <dd class="mono">{notes.length}</dd>
             </div>
             <div>
-              <dt>分钟读完</dt>
+              <dt>{t.minutesSuffix}</dt>
               <dd class="mono">{total}</dd>
             </div>
             {newCount > 0 && (
               <div class="is-new">
-                <dt>篇本周新增</dt>
+                <dt>{t.newThisWeekSuffix}</dt>
                 <dd class="mono">{newCount}</dd>
               </div>
             )}
@@ -68,11 +70,11 @@ export default (() => {
                 <a class="lf-card" href={resolveRelative(here, n.slug!)}>
                   <span class="lf-title-row">
                     <span class="lf-title">{n.frontmatter?.title}</span>
-                    {isNew(n) && <span class="lf-new">本周新增</span>}
-                    <span class="lf-min mono">{minutesOf(n)} 分钟</span>
+                    {isNew(n) && <span class="lf-new">{t.badgeNewThisWeek}</span>}
+                    <span class="lf-min mono">{t.minutes(minutesOf(n))}</span>
                   </span>
                   <span class="lf-desc">
-                    <b>读完你会弄懂：</b>
+                    <b>{t.learnPrefix}</b>
                     {cleanDesc(n.description)}
                   </span>
                 </a>
@@ -84,8 +86,8 @@ export default (() => {
         <div class="lf-next">
           {nextLines.map((x, i) => (
             <a class="lf-next-card" href={resolveRelative(here, `${x!.line.folder}/index` as FullSlug)}>
-              <span class="lf-next-kicker">{i === 0 ? "读完这条线，接着去" : "或者"}</span>
-              <span class="lf-next-name">{x!.line.name} →</span>
+              <span class="lf-next-kicker">{i === 0 ? t.nextFirst : t.nextOr}</span>
+              <span class="lf-next-name">{lineName(x!.line, cfg.locale)} →</span>
               <span class="lf-next-desc">{x!.desc}</span>
             </a>
           ))}

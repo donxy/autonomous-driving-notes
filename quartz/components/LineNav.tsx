@@ -1,20 +1,23 @@
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
 import { resolveRelative, FullSlug } from "../util/path"
-import { lineOf, notesOfLine, minutesOf } from "./lines"
+import { lineOf, lineName, notesOfLine, minutesOf } from "./lines"
+import { uiStrings } from "../i18n/ui"
 import { classNames } from "../util/lang"
 import style from "./styles/noteChrome.scss"
 
 // 左栏：本线导航（只在五条线里的笔记页显示）
 export default (() => {
-  const LineNav: QuartzComponent = ({ fileData, allFiles, displayClass }: QuartzComponentProps) => {
+  const LineNav: QuartzComponent = ({ fileData, allFiles, displayClass, cfg }: QuartzComponentProps) => {
     const line = lineOf(fileData.slug)
     if (!line || (fileData.slug ?? "").endsWith("/index")) return null
+    const t = uiStrings(cfg.locale)
+    const name = lineName(line, cfg.locale)
     const here = fileData.slug as FullSlug
     const notes = notesOfLine(allFiles, line.folder)
     return (
-      <nav class={classNames(displayClass, "line-nav")} aria-label={`${line.name}线`}>
+      <nav class={classNames(displayClass, "line-nav")} aria-label={`${name}${t.lineNav.ariaSuffix}`}>
         <a class="line-nav-head" href={resolveRelative(here, `${line.folder}/index` as FullSlug)}>
-          {line.name}线 · {notes.length} 篇
+          {t.lineNav.header(name, notes.length)}
         </a>
         <ol>
           {notes.map((n, i) => {

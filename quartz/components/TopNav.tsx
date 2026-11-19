@@ -4,7 +4,9 @@ import { concatenateResources } from "../util/resources"
 import Search from "./Search"
 import Darkmode from "./Darkmode"
 import ReaderMode from "./ReaderMode"
-import { LINES, lineOf } from "./lines"
+import LangSwitch from "./LangSwitch"
+import { uiStrings } from "../i18n/ui"
+import { LINES, lineOf, lineName } from "./lines"
 import style from "./styles/topNav.scss"
 
 // 全宽顶栏：Logo + 站名、五条线、搜索、深浅色、阅读模式。
@@ -13,9 +15,11 @@ export default (() => {
   const SearchC = Search()
   const DarkmodeC = Darkmode()
   const ReaderModeC = ReaderMode()
+  const LangSwitchC = LangSwitch()
 
   const TopNav: QuartzComponent = (props: QuartzComponentProps) => {
-    const { fileData } = props
+    const { fileData, cfg } = props
+    const t = uiStrings(cfg.locale)
     const here = fileData.slug as FullSlug
     const current = lineOf(fileData.slug)
     return (
@@ -31,21 +35,22 @@ export default (() => {
               <circle cx="21" cy="7" r="2.2" fill="var(--light)" />
               <circle class="brand-tip" cx="14" cy="4" r="2.2" />
             </svg>
-            <span>无人驾驶技能树</span>
+            <span>{t.siteTitle}</span>
           </a>
-          <nav class="site-lines" aria-label="五条线">
+          <nav class="site-lines" aria-label={t.linesAriaLabel}>
             {LINES.map((l) => (
               <a
                 href={resolveRelative(here, `${l.folder}/index` as FullSlug)}
                 class={current?.folder === l.folder ? "is-current" : ""}
                 aria-current={current?.folder === l.folder ? "true" : undefined}
               >
-                {l.name}
+                {lineName(l, cfg.locale)}
               </a>
             ))}
           </nav>
           <div class="site-tools">
             <SearchC {...props} />
+            <LangSwitchC {...props} />
             <DarkmodeC {...props} />
             <ReaderModeC {...props} />
           </div>
@@ -54,7 +59,7 @@ export default (() => {
     )
   }
 
-  TopNav.css = concatenateResources(style, SearchC.css, DarkmodeC.css, ReaderModeC.css)
+  TopNav.css = concatenateResources(style, SearchC.css, LangSwitchC.css, DarkmodeC.css, ReaderModeC.css)
   TopNav.beforeDOMLoaded = concatenateResources(
     SearchC.beforeDOMLoaded,
     DarkmodeC.beforeDOMLoaded,
@@ -62,6 +67,7 @@ export default (() => {
   )
   TopNav.afterDOMLoaded = concatenateResources(
     SearchC.afterDOMLoaded,
+    LangSwitchC.afterDOMLoaded,
     DarkmodeC.afterDOMLoaded,
     ReaderModeC.afterDOMLoaded,
   )

@@ -1,12 +1,14 @@
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
 import { resolveRelative, FullSlug } from "../util/path"
 import { lineOf, notesOfLine, minutesOf } from "./lines"
+import { uiStrings } from "../i18n/ui"
 import script from "./scripts/readingAids.inline"
 import style from "./styles/noteChrome.scss"
 
 // 阅读进度条（全端）+ 手机端目录面板（底部弹出）
 export default (() => {
-  const ReadingAids: QuartzComponent = ({ fileData, allFiles }: QuartzComponentProps) => {
+  const ReadingAids: QuartzComponent = ({ fileData, allFiles, cfg }: QuartzComponentProps) => {
+    const t = uiStrings(cfg.locale).readingAids
     const slug = fileData.slug ?? ""
     if (slug === "index" || slug.endsWith("/index") || slug.startsWith("tags")) return null
     const toc = (fileData.toc ?? []) as { depth: number; text: string; slug: string }[]
@@ -24,13 +26,13 @@ export default (() => {
         {entries.length > 1 && (
           <>
             <button type="button" class="toc-fab" aria-haspopup="dialog">
-              目录
+              {t.tocButton}
             </button>
-            <dialog class="toc-sheet" aria-label="本页目录">
+            <dialog class="toc-sheet" aria-label={t.sheetAriaLabel}>
               <div class="toc-sheet-grip" aria-hidden="true"></div>
               <div class="toc-sheet-head">
-                <span>本页目录</span>
-                <span class="mono toc-sheet-pct">已读 0%</span>
+                <span>{t.tocTitle}</span>
+                <span class="mono toc-sheet-pct">{t.readPct(0)}</span>
               </div>
               <ol>
                 {entries.map((t) => (
@@ -43,9 +45,9 @@ export default (() => {
               </ol>
               {next && (
                 <a class="toc-sheet-next" href={resolveRelative(slug as FullSlug, next.slug!)}>
-                  <span>下一篇</span>
+                  <span>{t.next}</span>
                   <b>
-                    {String(next.frontmatter?.title ?? "").split(/[：:]/)[0]} · {minutesOf(next)} 分钟 →
+                    {t.nextItem(String(next.frontmatter?.title ?? "").split(/[：:]/)[0], minutesOf(next))}
                   </b>
                 </a>
               )}

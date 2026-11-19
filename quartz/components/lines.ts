@@ -6,16 +6,22 @@ import { QuartzPluginData } from "../plugins/vfile"
 export interface LineDef {
   folder: string
   name: string
+  nameEn: string
   next: string[]
 }
 
 export const LINES: LineDef[] = [
-  { folder: "history", name: "历史", next: ["technology"] },
-  { folder: "technology", name: "技术", next: ["market", "regulation"] },
-  { folder: "market", name: "产业与市场", next: ["companies"] },
-  { folder: "companies", name: "公司", next: ["regulation"] },
-  { folder: "regulation", name: "安全与监管", next: ["history"] },
+  { folder: "history", name: "历史", nameEn: "History", next: ["technology"] },
+  { folder: "technology", name: "技术", nameEn: "Technology", next: ["market", "regulation"] },
+  { folder: "market", name: "产业与市场", nameEn: "Industry & Market", next: ["companies"] },
+  { folder: "companies", name: "公司", nameEn: "Companies", next: ["regulation"] },
+  { folder: "regulation", name: "安全与监管", nameEn: "Safety & Regulation", next: ["history"] },
 ]
+
+// 按构建 locale 取线名（英文构建用 nameEn，其余用中文名）。
+export function lineName(line: LineDef, locale: string | undefined): string {
+  return locale && locale.toLowerCase().startsWith("en") ? line.nameEn : line.name
+}
 
 export function lineOf(slug: string | undefined): LineDef | undefined {
   if (!slug) return undefined
@@ -55,6 +61,10 @@ export function lineMinutes(notes: QuartzPluginData[]): number {
 }
 
 // 描述里常以「信息截至 YYYY-MM-DD。」收尾；卡片上已有单独的截至信息，去掉以免重复。
+// 英文版对应句式为 "Information as of YYYY-MM-DD."，一并剥掉。
 export function cleanDesc(d: string | undefined): string {
-  return (d ?? "").replace(/\s*信息截至\s*\d{4}-\d{2}-\d{2}[。.]?\s*$/, "").trim()
+  return (d ?? "")
+    .replace(/\s*信息截至\s*\d{4}-\d{2}-\d{2}[。.]?\s*$/, "")
+    .replace(/\s*Information as of\s*\d{4}-\d{2}-\d{2}\.?\s*$/i, "")
+    .trim()
 }

@@ -1,0 +1,39 @@
+.lang-switch-wrap {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+a.lang-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.82rem;
+  line-height: 1;
+  color: var(--gray);
+  text-decoration: none;
+  background: none;
+  padding: 0.3rem 0.45rem;
+  border: 1px solid var(--lightgray);
+  border-radius: 999px;
+  white-space: nowrap;
+
+  .is-current {
+    color: var(--dark);
+    font-weight: 700;
+  }
+
+  .lang-switch-sep {
+    color: var(--lightgray);
+  }
+
+  &:hover {
+    border-color: var(--gray);
+  }
+}
+
+.lang-switch-note {
+  font-size: 0.72rem;
+  color: var(--gray);
+  white-space: nowrap;
+}

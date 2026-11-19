@@ -10,9 +10,15 @@ const LEVELS: Record<string, string> = {
   公司口径: "co",
   媒体转述: "md",
   未核实: "un",
+  // 英文版固定译法（术语表）：与中文标签同级、同 CSS 类
+  Verified: "ok",
+  "Company claim": "co",
+  "Media report": "md",
+  Unverified: "un",
 }
 
-const PATTERN = /【(已核实|公司口径|媒体转述|未核实)(?:[：:]\s*([^】]{1,30}))?】/g
+const PATTERN =
+  /【(已核实|公司口径|媒体转述|未核实|Verified|Company claim|Media report|Unverified)(?:[：:]\s*([^】]{1,30}))?】/g
 
 function escapeHtml(s: string): string {
   return s

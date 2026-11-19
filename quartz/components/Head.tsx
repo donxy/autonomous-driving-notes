@@ -82,6 +82,28 @@ export default (() => {
           </>
         )}
 
+        {/* 双语 hreflang（方案 §0.4）：仅对有对应译文的内容页输出（首页与五条线页面） */}
+        {(() => {
+          const slug = fileData.slug ?? ""
+          const first = slug.split("/")[0]
+          const hasCounterpart =
+            slug === "index" ||
+            ["history", "technology", "market", "companies", "regulation"].includes(first)
+          if (!hasCounterpart || !cfg.baseUrl) return null
+          const root = cfg.baseUrl.replace(/\/en$/, "")
+          const zhHref =
+            slug === "index" ? `https://${root}/` : `https://${root}/${slug}/`
+          const enHref =
+            slug === "index" ? `https://${root}/en/` : `https://${root}/en/${slug}/`
+          return (
+            <>
+              <link rel="alternate" hreflang="zh" href={zhHref} />
+              <link rel="alternate" hreflang="en" href={enHref} />
+              <link rel="alternate" hreflang="x-default" href={zhHref} />
+            </>
+          )
+        })()}
+
         <link rel="icon" href={iconPath} />
         <meta name="description" content={description} />
         <meta name="generator" content="Quartz" />

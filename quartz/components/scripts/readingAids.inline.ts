@@ -23,7 +23,11 @@ function setupReadingAids() {
       if (h && h.getBoundingClientRect().top < window.innerHeight * 0.3) current = a
     }
     links.forEach((a) => a.classList.toggle("is-current", a === current))
-    if (pct) pct.textContent = `已读 ${Math.round(progress() * 100)}%`
+    if (pct) {
+      const en = (document.documentElement.lang || "").toLowerCase().startsWith("en")
+      const p = Math.round(progress() * 100)
+      pct.textContent = en ? `${p}% read` : `已读 ${p}%`
+    }
   }
 
   const open = () => {

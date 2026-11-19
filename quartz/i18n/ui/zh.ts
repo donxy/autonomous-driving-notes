@@ -1,0 +1,82 @@
+import { UIStrings } from "./types"
+
+// 简体中文界面文案（与双语改造前的硬编码逐字一致，保证中文版渲染不变）
+export const zhUI: UIStrings = {
+  siteTitle: "无人驾驶技能树",
+  linesAriaLabel: "五条线",
+  langSwitch: {
+    toEnglish: "EN",
+    toChinese: "中文",
+    partialNote: "部分页面仅中文",
+    ariaLabel: "Switch to English",
+  },
+  evidenceLegend: {
+    title: "证据等级",
+    items: [
+      { level: "已核实", desc: "一手官方或监管文件" },
+      { level: "公司口径", desc: "公司自述、财报、目标" },
+      { level: "媒体转述", desc: "二手报道、追踪站、汇总" },
+      { level: "未核实", desc: "查不到一手来源" },
+    ],
+  },
+  lineNav: {
+    ariaSuffix: "线",
+    header: (lineName: string, count: number) => `${lineName}线 · ${count} 篇`,
+  },
+  noteMeta: {
+    linePos: (lineName: string) => `${lineName}线`,
+    asOf: "信息截至",
+    readMinutes: "分钟阅读",
+    citedByBefore: "被",
+    citedByAfter: "篇笔记引用",
+  },
+  prevNext: {
+    ariaLabel: "上一篇与下一篇",
+    prev: "← 上一篇",
+    backToLine: (lineName: string) => `← 返回${lineName}线`,
+    lineGuide: (lineName: string) => `${lineName}线导读`,
+    next: (minutes: number) => `下一篇 · ${minutes} 分钟 →`,
+    lineDone: "这条线读完了，接着去 →",
+  },
+  skillTree: {
+    minutes: (m: number) => `${m} 分钟`,
+    badgeNew: "新",
+    pathsTitle: "第一次来？选一条路",
+    pathsAside: "每条 4 篇，按顺序读，前一篇是后一篇的前置",
+    aboutMinutes: (m: number) => `约 ${m} 分钟`,
+    startFromFirst: "从第 1 篇开始 →",
+    treeTitle: "技能树",
+    legendEntry: "入口篇",
+    legendNew: "本周新增",
+    totalLine: (notes: number, minutes: number) => `${notes} 篇 · 约 ${minutes} 分钟`,
+    treeIntro: "五条线，从上往下读。每个节点标注阅读时长。",
+    lineSummary: (notes: number, minutes: number) => `${notes} 篇 · 约 ${minutes} 分钟`,
+    lineSummaryShort: (notes: number, minutes: number) => `${notes} 篇 · ${minutes}′`,
+    lineGuide: (lineName: string) => `${lineName}线导读 →`,
+    errataTitle: "勘误台 · 本轮纠正的常见误传",
+    updatesTitle: "最近更新",
+  },
+  readingAids: {
+    tocButton: "目录",
+    tocTitle: "本页目录",
+    readPct: (pct: number) => `已读 ${pct}%`,
+    next: "下一篇",
+    nextItem: (title: string, minutes: number) => `${title} · ${minutes} 分钟 →`,
+    sheetAriaLabel: "本页目录",
+  },
+  lineFolder: {
+    publishedSuffix: "篇已发布",
+    minutesSuffix: "分钟读完",
+    newThisWeekSuffix: "篇本周新增",
+    badgeNewThisWeek: "本周新增",
+    minutes: (m: number) => `${m} 分钟`,
+    learnPrefix: "读完你会弄懂：",
+    nextFirst: "读完这条线，接着去",
+    nextOr: "或者",
+  },
+  footer: {
+    sourceLabel: "本站源码（GitHub）",
+    builtWithLabel: "由 Quartz 构建",
+  },
+  breadcrumbHome: "首页",
+}

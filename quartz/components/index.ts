@@ -32,6 +32,7 @@ import PrevNext from "./PrevNext"
 import EvidenceLegend from "./EvidenceLegend"
 import ReadingAids from "./ReadingAids"
 import SiteFooter from "./SiteFooter"
+import LangSwitch from "./LangSwitch"
 
 export {
   ArticleTitle,
@@ -68,4 +69,5 @@ export {
   EvidenceLegend,
   ReadingAids,
   SiteFooter,
+  LangSwitch,
 }

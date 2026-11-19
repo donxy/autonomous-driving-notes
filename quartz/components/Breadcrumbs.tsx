@@ -2,6 +2,7 @@ import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } fro
 import breadcrumbsStyle from "./styles/breadcrumbs.scss"
 import { FullSlug, SimpleSlug, resolveRelative, simplifySlug } from "../util/path"
 import { classNames } from "../util/lang"
+import { uiStrings, isEnglish } from "../i18n/ui"
 import { trieFromAllFiles } from "../util/ctx"
 
 type CrumbData = {
@@ -49,7 +50,10 @@ export default ((opts?: Partial<BreadcrumbOptions>) => {
     allFiles,
     displayClass,
     ctx,
+    cfg,
   }: QuartzComponentProps) => {
+    // 英文构建时根名义用英文（layout 里写死的中文根名只对中文版生效）
+    const rootName = isEnglish(cfg.locale) ? uiStrings(cfg.locale).breadcrumbHome : options.rootName
     const trie = (ctx.trie ??= trieFromAllFiles(allFiles))
     const slugParts = fileData.slug!.split("/")
     const pathNodes = trie.ancestryChain(slugParts)
@@ -61,7 +65,7 @@ export default ((opts?: Partial<BreadcrumbOptions>) => {
     const crumbs: CrumbData[] = pathNodes.map((node, idx) => {
       const crumb = formatCrumb(node.displayName, fileData.slug!, simplifySlug(node.slug))
       if (idx === 0) {
-        crumb.displayName = options.rootName
+        crumb.displayName = rootName
       }
 
       // For last node (current page), set empty path

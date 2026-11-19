@@ -18,7 +18,9 @@
     "format": "npx prettier . --write",
     "test": "tsx --test",
     "profile": "0x -D prof ./quartz/bootstrap-cli.mjs build --concurrency=1",
-    "count-notes": "node scripts/count-notes.mjs"
+    "count-notes": "node scripts/count-notes.mjs",
+    "build-bilingual": "node scripts/build-bilingual.mjs",
+    "check-i18n": "node scripts/check-i18n-sync.mjs && node scripts/validate-i18n.mjs"
   },
   "engines": {
     "npm": ">=10.9.2",

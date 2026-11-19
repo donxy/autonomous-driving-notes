@@ -1,0 +1,82 @@
+import { UIStrings } from "./types"
+
+// English UI strings for the custom components (see zh.ts for the source of truth).
+export const enUI: UIStrings = {
+  siteTitle: "Self-Driving Skill Tree",
+  linesAriaLabel: "The five lines",
+  langSwitch: {
+    toEnglish: "EN",
+    toChinese: "中文",
+    partialNote: "Some pages are available in Chinese only",
+    ariaLabel: "切换到中文",
+  },
+  evidenceLegend: {
+    title: "Evidence levels",
+    items: [
+      { level: "Verified", desc: "primary official or regulatory documents" },
+      { level: "Company claim", desc: "company statements, filings and targets" },
+      { level: "Media report", desc: "secondary reporting, trackers and roundups" },
+      { level: "Unverified", desc: "no primary source found" },
+    ],
+  },
+  lineNav: {
+    ariaSuffix: " line",
+    header: (lineName: string, count: number) => `${lineName} line · ${count} notes`,
+  },
+  noteMeta: {
+    linePos: (lineName: string) => `${lineName} line`,
+    asOf: "Information as of",
+    readMinutes: "min read",
+    citedByBefore: "Cited by",
+    citedByAfter: "notes",
+  },
+  prevNext: {
+    ariaLabel: "Previous and next notes",
+    prev: "← Previous",
+    backToLine: (lineName: string) => `← Back to the ${lineName} line`,
+    lineGuide: (lineName: string) => `${lineName} line guide`,
+    next: (minutes: number) => `Next · ${minutes} min →`,
+    lineDone: "Line finished — continue to →",
+  },
+  skillTree: {
+    minutes: (m: number) => `${m} min`,
+    badgeNew: "New",
+    pathsTitle: "First time here? Pick a path",
+    pathsAside: "Four notes each, in order — each one builds on the previous",
+    aboutMinutes: (m: number) => `about ${m} min`,
+    startFromFirst: "Start with note 1 →",
+    treeTitle: "Skill tree",
+    legendEntry: "Entry note",
+    legendNew: "New this week",
+    totalLine: (notes: number, minutes: number) => `${notes} notes · about ${minutes} min`,
+    treeIntro: "Five lines, read top to bottom. Each node shows its reading time.",
+    lineSummary: (notes: number, minutes: number) => `${notes} notes · about ${minutes} min`,
+    lineSummaryShort: (notes: number, minutes: number) => `${notes} notes · ${minutes}′`,
+    lineGuide: (lineName: string) => `${lineName} line guide →`,
+    errataTitle: "Errata desk · common misconceptions corrected this round",
+    updatesTitle: "Recent updates",
+  },
+  readingAids: {
+    tocButton: "Contents",
+    tocTitle: "On this page",
+    readPct: (pct: number) => `${pct}% read`,
+    next: "Next",
+    nextItem: (title: string, minutes: number) => `${title} · ${minutes} min →`,
+    sheetAriaLabel: "On this page",
+  },
+  lineFolder: {
+    publishedSuffix: "notes published",
+    minutesSuffix: "minutes in total",
+    newThisWeekSuffix: "new this week",
+    badgeNewThisWeek: "New this week",
+    minutes: (m: number) => `${m} min`,
+    learnPrefix: "What you will take away:",
+    nextFirst: "Line finished — continue to",
+    nextOr: "or",
+  },
+  footer: {
+    sourceLabel: "Site source (GitHub)",
+    builtWithLabel: "Built with Quartz",
+  },
+  breadcrumbHome: "Home",
+}
