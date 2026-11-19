@@ -15,7 +15,7 @@ export default (() => {
     const prev = notes[i - 1]
     const next = notes[i + 1]
     const nextLine = lineByFolder(line.next[0])
-    const title = (s: unknown) => String(s ?? "").split(/[：:]/)[0]
+    const title = (s: unknown) => String(s ?? "")
     return (
       <nav class="prev-next" aria-label="上一篇与下一篇">
         {prev ? (

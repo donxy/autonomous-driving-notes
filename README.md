@@ -27,4 +27,10 @@ npx quartz build --serve   # http://localhost:8080
 
 推送到 `main` 后，`.github/workflows/deploy.yml` 自动构建并发布到 GitHub Pages。
 
-注：三个文件未存入本仓库，构建工作流会在构建前从 Quartz 上游仓库原样取回——`quartz/static/` 下的默认图标（icon.png / og-image.png，二进制）和 `quartz/util/emojimap.json`（约 15 MB，超出文件推送上限）。本仓库也不含 Quartz 上游的 `docs/` 文档目录。
+注：站点自有的图标（`quartz/static/icon.png`、`og-image.png`，源图为 `logo.svg`）已存入本仓库；只有 `quartz/util/emojimap.json`（约 15 MB，超出文件推送上限）未入库，构建工作流在文件缺失时才从 Quartz 上游取回。本地构建前也需要先取回它：
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/jackyzha0/quartz/v4/quartz/util/emojimap.json -o quartz/util/emojimap.json
+```
+
+本仓库也不含 Quartz 上游的 `docs/` 文档目录。

@@ -368,7 +368,9 @@ article .callout[data-callout] {
   }
 }
 
-article .callout[data-callout="summary"] {
+// 注意：Quartz 把 [!summary] / [!tldr] 渲染成 data-callout="abstract"
+article .callout[data-callout="summary"],
+article .callout[data-callout="abstract"] {
   --color: var(--tertiary);
   padding: 1.2rem 1.5rem;
 

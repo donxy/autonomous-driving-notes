@@ -51,7 +51,7 @@ export default {
     },
     search: {
       title: "搜索笔记、公司、术语",
-      searchBarPlaceholder: "搜索些什么",
+      searchBarPlaceholder: "搜索笔记、公司、术语",
     },
     tableOfContents: {
       title: "目录",
