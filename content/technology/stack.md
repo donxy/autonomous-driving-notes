@@ -49,7 +49,7 @@ asof: 2026-11-11
 
 - **Mobileye**：1999 年创立，EyeQ 芯片 + 视觉感知起家，2014 年纽交所上市，2017 年被 Intel 以 153 亿美元收购、2022 年再分拆上市；Tesla HW1 用的就是它的平台，后因部署方式分歧于 2016 年分手（见 [[companies/tesla|Tesla]]）。
 - **NVIDIA DRIVE**：2015 年发布 Drive PX，把 GPU + 深度学习感知做成车载平台；Tesla HW2 曾采用 Drive PX 2，之后 Tesla 转自研芯片——平台商与整车厂的关系一直在变。
-- **华为乾崑 / Momenta**：中国市场的两种供应商形态——全栈自研（芯片+域控+算法）与算法供应商嵌入车厂量产车，细节见 [[market/robotaxi-china|中国 Robotaxi 格局]] 的量产辅助驾驶部分。
+- **华为乾崑 / Momenta**：中国市场的两种供应商形态——全栈自研（芯片+域控+算法）与算法供应商嵌入车厂量产车，细节见 [[market/consumer-adas|乘用车智驾篇]]。
 
 ## 相关笔记
 

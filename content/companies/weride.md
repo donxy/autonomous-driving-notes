@@ -53,9 +53,9 @@ asof: 2026-11-11
 
 来源：[Uber × 文远：阿布扎比全无人商业运营联合稿（2025）](https://investor.uber.com/news-events/news/press-release-details/2025/WeRide-and-Uber-Launch-Middle-Easts-First-Fully-Driverless-Robotaxi-Commercial-Operations-in-Abu-Dhabi-UAE/default.aspx)
 
-## 两次上市：Robotaxi 第一股
+## 两次上市：纳斯达克与港交所
 
-- **2024 年 10 月 25 日纳斯达克挂牌**（代码 WRD）：发行 774 万份 ADS、定价 15.5 美元（区间下限），公开发行募资约 **1.2 亿美元**；另有同步私募配售约 3.2 亿美元——「IPO 募资 4.4 亿」与「仅 1.2 亿」两个说法在媒体上并存，差的就是私募这一块，引用须注明口径。上市估值约 42–45 亿美元。它是全球首家上市的 robotaxi 公司，比小马智行早一个月（中文报道常把顺序写反）。
+- **2024 年 10 月 25 日纳斯达克挂牌**（代码 WRD）：发行 774 万份 ADS、定价 15.5 美元（区间下限），公开发行募资约 **1.2 亿美元**；另有同步私募配售约 3.2 亿美元——「IPO 募资 4.4 亿」与「仅 1.2 亿」两个说法在媒体上并存，差的就是私募这一块，引用须注明口径；若绿鞋全额行使，合计最高约 4.585 亿美元（定价稿的条件式表述），本站以不含绿鞋的约 4.4 亿为合计口径。上市估值约 42–45 亿美元。公司自称「全球首家上市的 robotaxi 公司」（宣传口径）；其挂牌时间比小马智行早一个月（中文报道常把顺序写反）。
 - **2025 年 11 月 6 日港交所双重主要上市**（代码 0800）：发行价 27.1 港元，募资约 23.9 亿港元（绿鞋前），首日收跌约 10%。
 
 来源：[Nasdaq：文远知行上市公告（2024-10-25）](https://www.nasdaq.com/press-release/worlds-first-ipo-universal-autonomous-driving-technology-company-weride-officially)
