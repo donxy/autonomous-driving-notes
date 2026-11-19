@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 318" font-family="-apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <defs>
+    <linearGradient id="lvl" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#8fb8a8"/>
+      <stop offset="0.5" stop-color="#175e63"/>
+      <stop offset="1" stop-color="#0d3a4d"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="960" height="318" rx="14" fill="#f7f5f0"/>
+  <!-- 分界线：L2 | L3 -->
+  <line x1="480" y1="34" x2="480" y2="272" stroke="#c26d2d" stroke-width="2.5" stroke-dasharray="7 5"/>
+  <rect x="392" y="8" width="176" height="24" rx="12" fill="#c26d2d"/>
+  <text x="480" y="25" text-anchor="middle" font-size="13.5" font-weight="700" fill="#ffffff">分界线在这里</text>
+  <!-- 等级带 -->
+  <rect x="30" y="46" width="900" height="58" rx="10" fill="url(#lvl)"/>
+  <g fill="#ffffff" font-weight="700" text-anchor="middle">
+    <text x="105" y="72" font-size="21">L0</text>
+    <text x="255" y="72" font-size="21">L1</text>
+    <text x="405" y="72" font-size="21">L2</text>
+    <text x="555" y="72" font-size="21">L3</text>
+    <text x="705" y="72" font-size="21">L4</text>
+    <text x="855" y="72" font-size="21">L5</text>
+    <g font-size="12.5" font-weight="400">
+      <text x="105" y="92">应急辅助</text>
+      <text x="255" y="92">部分驾驶辅助</text>
+      <text x="405" y="92">组合驾驶辅助</text>
+      <text x="555" y="92">有条件自动驾驶</text>
+      <text x="705" y="92">高度自动驾驶</text>
+      <text x="855" y="92">完全自动驾驶</text>
+    </g>
+  </g>
+  <!-- 谁开车 -->
+  <text x="30" y="138" font-size="14" font-weight="700" fill="#453f36">谁在开车</text>
+  <g font-size="13.5" fill="#211d18">
+    <rect x="30" y="148" width="450" height="34" rx="8" fill="#e7e1d6"/>
+    <text x="255" y="170" text-anchor="middle">驾驶人（系统只做单一子任务或瞬时辅助）</text>
+    <rect x="480" y="148" width="300" height="34" rx="8" fill="#cfe0dd"/>
+    <text x="630" y="170" text-anchor="middle">系统（在其 ODD 内）</text>
+    <rect x="780" y="148" width="150" height="34" rx="8" fill="#cfe0dd"/>
+    <text x="855" y="170" text-anchor="middle">系统（无条件）</text>
+  </g>
+  <!-- 谁兜底 -->
+  <text x="30" y="212" font-size="14" font-weight="700" fill="#453f36">出了状况谁兜底</text>
+  <g font-size="13.5" fill="#211d18">
+    <rect x="30" y="222" width="450" height="34" rx="8" fill="#e7e1d6"/>
+    <text x="255" y="244" text-anchor="middle">驾驶人：持续监督 + 随时接管</text>
+    <rect x="480" y="222" width="150" height="34" rx="8" fill="#f3ddc4"/>
+    <text x="555" y="244" text-anchor="middle">接管请求时的人</text>
+    <rect x="630" y="222" width="300" height="34" rx="8" fill="#cfe0dd"/>
+    <text x="780" y="244" text-anchor="middle">系统自己达到最小风险状态</text>
+  </g>
+  <!-- 底部定性 -->
+  <g font-size="14.5" font-weight="700">
+    <text x="255" y="292" text-anchor="middle" fill="#175e63">L0–L2 ＝ 驾驶辅助（不是自动驾驶）</text>
+    <text x="705" y="292" text-anchor="middle" fill="#175e63">L3–L5 ＝ 自动驾驶功能</text>
+  </g>
+</svg>
