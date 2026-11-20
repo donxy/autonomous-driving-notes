@@ -1,16 +1,16 @@
 ---
 title: Tesla
-description: Tesla 的 Autopilot/FSD 演进、纯视觉路线、Robotaxi 试点现状与监管审查——文件口径与营销语言分开写。信息截至 2026-11-11。
+description: Tesla 的 Autopilot/FSD 演进、纯视觉路线、Robotaxi 试点现状与监管审查——文件口径与营销语言分开写。信息截至 2026-11-19。
 tags:
   - 公司
   - Tesla
 order: 2
-asof: 2026-11-11
+asof: 2026-11-19
 ---
 
 
 > [!warning] 本页纪律
-> 把「已交付功能的监管定性」和「营销语言」分开写。凡引 Tesla 对自身功能的定性，以其监管文件与官方支持页为准。信息截至 2026-11-11。
+> 把「已交付功能的监管定性」和「营销语言」分开写。凡引 Tesla 对自身功能的定性，以其监管文件与官方支持页为准。信息截至 2026-11-19。
 
 ## 一条主线：名字越叫越满，定性一直是 L2
 
@@ -43,8 +43,9 @@ asof: 2026-11-11
 - **奥斯汀试点 2025-06-22 上线**：邀请制，约 10–20 辆 Model Y，南奥斯汀限定区域，6:00–24:00 运营，统一价 4.20 美元/单；**驾驶座无人，但前排副驾坐有 Tesla 安全监控员**（可急停，无方向盘/踏板）——因此不是无监督运营。上线首日即出现车辆短暂逆行等视频，NHTSA 次日即与 Tesla 联系问询。来源：[TechCrunch（2025-06-22）](https://techcrunch.com/2025/06/22/tesla-launches-robotaxi-rides-in-austin-with-big-promises-and-unanswered-questions/)
 - **湾区（2025-07-31）**：上线的是持 CPUC 包车许可（TCP）的叫车服务，**每辆车驾驶座有安全驾驶员**；加州 DMV 名单中 Tesla 仅在「带安全员测试」名单，不在无人测试与部署名单。来源：[dockduty 核对（2026-10-27）](https://dockduty.com/blog/tesla-robotaxi-san-francisco.html)
 - **扩张（2026，据追踪站与 Tesla 页面汇总）**：2026-01-22 起奥斯汀开始有限移除安全监控员；2026 年内达拉斯、休斯顿、迈阿密、奥兰多、坦帕等陆续无人运营；2026-09-03 Cybercab 在奥斯汀加入收费车队；截至 2026-11 上旬约 8 个都会区无人运营 + 湾区带驾驶员服务。来源：[Wikipedia: Tesla Robotaxi](https://en.wikipedia.org/wiki/Tesla_Robotaxi)；[teslanewswire 追踪（2026-11-09）](https://teslanewswire.com/robotaxi-tracker)
-- **Cybercab 量产状态【公司口径】**：Tesla Q2 2026 股东文件称已在得州工厂投产；2026-10-21 Q3 电话会称目标 2026 年底前开始小批量客户交付。
-- **Tesla 首份 Robotaxi 安全报告（2026-10-21，公司口径）**：称 2026-01-22 至 10-18 无车内监控员里程约 311 万英里、零人员受伤；但其可下载清单同期列有 32 起上报 NHTSA 的碰撞（30 起仅财产损失），且该数字与 Q3 股东信「累计无人里程近 200 万」的口径并不一致。引用时两条都要带。来源：[teslant 转述（2026-10）](https://teslant.com/en/news/tesla-robotaxi-safety-report-3-1-million-miles-32-crashes-las-vegas-phoenix-next-2026-10)
+- **Cybercab 量产状态【公司口径】**：Tesla Q2 2026 股东文件称已在得州工厂投产；2026-10-21 Q3 电话会称目标 2026 年底前开始小批量客户交付。Q3 股东演示稿另列：得州 Cybercab 年装机产能超 125,000 辆、状态为 Production。
+- **Tesla 首份 Robotaxi 安全报告（2026-10-21，公司口径）**：称 2026-01-22 至 10-18 无车内监控员里程约 311 万英里、零人员受伤；但其可下载清单同期列有 32 起上报 NHTSA 的碰撞（30 起仅财产损失），且该数字与 Q3 股东演示稿的口径并不一致——演示稿原文称「截至季末（2026-09-30）累计无监督 Robotaxi 里程近 200 万英里、环比增至 8 倍」，时间窗与「无监督」的界定都与安全报告不同。引用时两条都要带。来源：[teslant 转述（2026-10）](https://teslant.com/en/news/tesla-robotaxi-safety-report-3-1-million-miles-32-crashes-las-vegas-phoenix-next-2026-10)；[Tesla Q3 2026 股东演示稿（2026-10-21）](https://assets-ir.tesla.com/tesla-contents/IR/TSLA-Q3-2026-Update.pdf)
+- **FSD 运营数字（Q3 2026 演示稿）**：活跃 FSD 订阅 174 万份（同比 +67%），北美新交付车辆 FSD 搭载率超 75%；欧盟九国超 10 万用户、累计行驶超 1.6 亿公里。累计 FSD (Supervised) 里程演示稿只给了图表（末柱接近 160 亿英里量级），没有精确数字，引用时只能作图表读数。
 
 ## 监管审查（截至 2026-11）
 
