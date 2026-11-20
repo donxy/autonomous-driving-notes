@@ -32,7 +32,7 @@ jobs:
           [ -f quartz/static/icon.png ] || curl -fsSL https://raw.githubusercontent.com/jackyzha0/quartz/v4/quartz/static/icon.png -o quartz/static/icon.png
           [ -f quartz/static/og-image.png ] || curl -fsSL https://raw.githubusercontent.com/jackyzha0/quartz/v4/quartz/static/og-image.png -o quartz/static/og-image.png
           [ -f quartz/util/emojimap.json ] || curl -fsSL https://raw.githubusercontent.com/jackyzha0/quartz/v4/quartz/util/emojimap.json -o quartz/util/emojimap.json
-      - name: Build Quartz (bilingual: zh → public, en → public/en)
+      - name: "Build Quartz (bilingual: zh to public, en to public/en)"
         run: node scripts/build-bilingual.mjs
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
